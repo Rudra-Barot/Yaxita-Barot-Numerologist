@@ -43,6 +43,251 @@ body {
     padding: 0 20px;
 }
 
+/* ============ VASTU SHASTRA ELEMENTS ============ */
+
+.swastika {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    opacity: 0.15;
+    animation: rotate-slow 20s linear infinite;
+}
+
+.om-symbol {
+    font-size: 3rem;
+    color: var(--primary-red);
+    opacity: 0.2;
+    animation: float-slow 6s ease-in-out infinite;
+    font-weight: bold;
+}
+
+.lotus {
+    font-size: 2.5rem;
+    animation: bloom 4s ease-in-out infinite;
+}
+
+.mandala {
+    width: 100%;
+    height: auto;
+    opacity: 0.1;
+    animation: rotate-slow 30s linear infinite reverse;
+}
+
+.kalash {
+    font-size: 2rem;
+    animation: float-slow 5s ease-in-out infinite;
+}
+
+.vastu-direction {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary-red);
+    opacity: 0.3;
+}
+
+.diya {
+    font-size: 1.5rem;
+    animation: flicker 0.5s infinite;
+}
+
+.torana {
+    border-top: 3px solid var(--golden);
+    border-bottom: 3px solid var(--golden);
+    padding: 1rem 0;
+    margin: 1rem 0;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 10px,
+        rgba(255, 215, 0, 0.1) 10px,
+        rgba(255, 215, 0, 0.1) 20px
+    );
+}
+
+.tree-icon {
+    font-size: 2.5rem;
+    animation: sway 4s ease-in-out infinite;
+}
+
+.vastu-element {
+    position: fixed;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.08;
+}
+
+.vastu-top-left {
+    top: 100px;
+    left: 20px;
+}
+
+.vastu-top-right {
+    top: 100px;
+    right: 20px;
+}
+
+.vastu-bottom-left {
+    bottom: 100px;
+    left: 20px;
+}
+
+.vastu-bottom-right {
+    bottom: 100px;
+    right: 20px;
+}
+
+.shree-yantra {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    animation: rotate-slow 25s linear infinite;
+}
+
+.vastu-zone {
+    position: relative;
+    overflow: hidden;
+}
+
+.vastu-zone::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at var(--zone-x, 50%) var(--zone-y, 50%), 
+                                rgba(255, 215, 0, 0.05) 0%, 
+                                transparent 50%);
+    pointer-events: none;
+}
+
+@keyframes rotate-slow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes float-slow {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(5deg); }
+}
+
+@keyframes bloom {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.1) rotate(10deg); }
+}
+
+@keyframes sway {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-2deg); }
+    75% { transform: rotate(2deg); }
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.vastu-divider {
+    text-align: center;
+    padding: 2rem 0;
+    background: linear-gradient(90deg, 
+                                transparent 0%, 
+                                rgba(255, 215, 0, 0.1) 50%, 
+                                transparent 100%);
+    margin: 2rem 0;
+}
+
+.vastu-divider-text {
+    color: var(--primary-red);
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    opacity: 0.5;
+}
+
+.vastu-sign {
+    display: inline-block;
+    border: 2px solid var(--golden);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    color: var(--primary-red);
+    font-weight: bold;
+    font-size: 0.9rem;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.05) 0%, transparent 100%);
+}
+
+.ornament-corner {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--golden);
+    opacity: 0.2;
+}
+
+.ornament-corner::before,
+.ornament-corner::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: var(--golden);
+    border-radius: 50%;
+}
+
+.ornament-corner.top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.ornament-corner.top-left::before {
+    top: -10px;
+    left: -10px;
+}
+
+.ornament-corner.top-left::after {
+    bottom: -10px;
+    right: -10px;
+}
+
+.ornament-corner.top-right {
+    top: 20px;
+    right: 20px;
+}
+
+.ornament-corner.bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.ornament-corner.bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+.vastu-mantra {
+    font-style: italic;
+    color: var(--primary-red);
+    opacity: 0.4;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.direction-badge {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--light-golden) 0%, rgba(255, 215, 0, 0.1) 100%);
+    border: 2px solid var(--golden);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--primary-red);
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin: 0 0.5rem;
+}
+
 /* ============ GLOWING DOTS PATTERN ============ */
 .dots-pattern {
     position: absolute;
@@ -956,6 +1201,18 @@ body {
         height: 5px;
         box-shadow: 0 0 10px var(--golden), 0 0 20px rgba(255, 215, 0, 0.4);
     }
+
+    .vastu-element {
+        opacity: 0.03;
+    }
+
+    .om-symbol {
+        font-size: 2rem;
+    }
+
+    .lotus {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1005,6 +1262,13 @@ body {
     .dot-3, .dot-5, .dot-9 {
         display: none;
     }
+
+    .direction-badge {
+        width: 35px;
+        height: 35px;
+        font-size: 0.7rem;
+        margin: 0.3rem;
+    }
 }
     </style>
 </head>
@@ -1046,8 +1310,14 @@ body {
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- Hero Section with Vastu Elements -->
+    <section id="home" class="hero vastu-zone" style="--zone-x: 50%; --zone-y: 50%;">
+        <!-- Fixed Vastu Corner Elements -->
+        <div class="vastu-element vastu-top-left">ॐ</div>
+        <div class="vastu-element vastu-top-right">☯️</div>
+        <div class="vastu-element vastu-bottom-left">🙏</div>
+        <div class="vastu-element vastu-bottom-right">ॐ</div>
+
         <!-- Glowing Dots Pattern -->
         <div class="dots-pattern">
             <div class="dot dot-1"></div>
@@ -1063,11 +1333,23 @@ body {
         </div>
 
         <div class="hero-content">
+            <!-- Vastu Decorations -->
+            <div class="vastu-sign" style="margin-bottom: 1rem;">☯️ East Facing ☯️</div>
+            
             <div class="glow-effect"></div>
-            <div class="auspicious-symbol top">॥</div>
+            <div class="auspicious-symbol top">॥ शुभं ॥</div>
+            
             <h1 class="glitch-text" id="heroTitle">Unlock Your Destiny Through Numbers</h1>
             <p class="fade-in-text" id="heroSubtitle">Discover the hidden meanings of numbers in your life and embrace your true potential</p>
-            <div class="auspicious-symbol bottom">॥</div>
+            
+            <!-- Vastu Diya Elements -->
+            <div style="margin: 1.5rem 0; font-size: 2rem;">
+                <span class="diya">🪔</span>
+                <span style="margin: 0 1rem; opacity: 0.5;">●●●</span>
+                <span class="diya">🪔</span>
+            </div>
+            
+            <div class="auspicious-symbol bottom">॥ शुभं ॥</div>
             <button class="cta-btn pulse-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
                 <span id="ctaButton">Get Your Reading Today</span>
             </button>
@@ -1075,12 +1357,35 @@ body {
         <div class="hero-overlay"></div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Vastu Divider -->
+    <div class="vastu-divider">
+        <span class="om-symbol">ॐ</span>
+        <span style="margin: 0 1rem; color: var(--primary-red); opacity: 0.3;">●●●</span>
+        <span class="lotus">🌸</span>
+        <span style="margin: 0 1rem; color: var(--primary-red); opacity: 0.3;">●●●</span>
+        <span class="om-symbol">ॐ</span>
+    </div>
+
+    <!-- About Section with Vastu -->
+    <section id="about" class="about vastu-zone" style="--zone-x: 20%; --zone-y: 50%;">
         <div class="container">
+            <!-- Vastu Decorative Top -->
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <div class="kalash">🏺</div>
+                <div class="vastu-mantra">शुभं भव | Be Auspicious | શુભં ભવ</div>
+            </div>
+
+            <!-- Ornamental Corners -->
+            <div class="ornament-corner top-left"></div>
+            <div class="ornament-corner top-right"></div>
+
             <div class="about-wrapper">
                 <div class="about-content slide-in-left">
-                    <h2 class="glow-text" id="aboutTitle">About Yaxita Barot</h2>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; justify-content: center;">
+                        <span class="tree-icon">🌳</span>
+                        <h2 class="glow-text" id="aboutTitle">About Yaxita Barot</h2>
+                        <span class="tree-icon">🌳</span>
+                    </div>
                     <p id="aboutP1">Yaxita Barot is a dedicated numerologist with years of experience in helping individuals understand their life path, personal strengths, and hidden potentials through the ancient science of numerology.</p>
                     <p id="aboutP2">With a deep understanding of numerological principles and spiritual wisdom, Yaxita provides personalized guidance to help you make informed decisions about your career, relationships, health, and personal growth.</p>
                     <p id="aboutP3">Whether you're seeking clarity on your life direction or looking to understand the significance of numbers in your daily life, Yaxita's expertise will illuminate your path forward.</p>
@@ -1097,16 +1402,48 @@ body {
                     </div>
                 </div>
             </div>
+
+            <!-- Vastu Decorative Bottom -->
+            <div class="ornament-corner bottom-left"></div>
+            <div class="ornament-corner bottom-right"></div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Vastu Divider -->
+    <div class="vastu-divider">
+        <span class="lotus">🌸</span>
+        <span style="margin: 0 1rem; color: var(--primary-red); opacity: 0.3;">✧</span>
+        <span class="om-symbol">ॐ</span>
+        <span style="margin: 0 1rem; color: var(--primary-red); opacity: 0.3;">✧</span>
+        <span class="lotus">🌸</span>
+    </div>
+
+    <!-- Services Section with Vastu -->
+    <section id="services" class="services vastu-zone" style="--zone-x: 50%; --zone-y: 50%;">
         <div class="container">
+            <!-- Vastu Torana Banner -->
+            <div class="torana">
+                <div style="text-align: center;">
+                    <span class="lotus">🌸</span>
+                    <span style="margin: 0 1rem; color: var(--primary-red); opacity: 0.3;">✧ तोरण ✧</span>
+                    <span class="lotus">🌸</span>
+                </div>
+            </div>
+
             <h2 class="glow-text" id="servicesTitle">Our Services</h2>
             <p class="section-subtitle" id="servicesSubtitle">Transform Your Life with Numerological Insights</p>
+
+            <!-- Vastu Direction Indicators -->
+            <div style="text-align: center; margin-bottom: 2rem; opacity: 0.6;">
+                <span class="direction-badge" title="North - Career">उ</span>
+                <span class="direction-badge" title="East - Health">पू</span>
+                <span class="direction-badge" title="South - Prosperity">दक्ष</span>
+                <span class="direction-badge" title="West - Learning">पश्चिम</span>
+            </div>
+
             <div class="services-grid">
                 <div class="service-card stagger-animation">
+                    <div class="diya" style="margin-bottom: 0.5rem;">🪔</div>
                     <div class="service-icon"><i class="fas fa-book-open"></i></div>
                     <h3 id="service1Title">Numerology Analysis</h3>
                     <p class="service-short" id="service1Short">Comprehensive analysis of your life numbers</p>
@@ -1116,6 +1453,7 @@ body {
                 </div>
 
                 <div class="service-card stagger-animation">
+                    <div class="diya" style="margin-bottom: 0.5rem;">🪔</div>
                     <div class="service-icon"><i class="fas fa-chart-pie"></i></div>
                     <h3 id="service2Title">Birth Chart Reading</h3>
                     <p class="service-short" id="service2Short">Detailed reading of your birth chart</p>
@@ -1125,6 +1463,7 @@ body {
                 </div>
 
                 <div class="service-card stagger-animation">
+                    <div class="diya" style="margin-bottom: 0.5rem;">🪔</div>
                     <div class="service-icon"><i class="fas fa-dice-one"></i></div>
                     <h3 id="service3Title">Lucky Numbers</h3>
                     <p class="service-short" id="service3Short">Discover your lucky numbers</p>
@@ -1134,6 +1473,7 @@ body {
                 </div>
 
                 <div class="service-card stagger-animation">
+                    <div class="diya" style="margin-bottom: 0.5rem;">🪔</div>
                     <div class="service-icon"><i class="fas fa-car"></i></div>
                     <h3 id="service4Title">Car Number Consultation</h3>
                     <p class="service-short" id="service4Short">Choose the perfect car number</p>
@@ -1143,6 +1483,7 @@ body {
                 </div>
 
                 <div class="service-card stagger-animation">
+                    <div class="diya" style="margin-bottom: 0.5rem;">🪔</div>
                     <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
                     <h3 id="service5Title">Phone Number Analysis</h3>
                     <p class="service-short" id="service5Short">Analyze your phone number's energy</p>
@@ -1152,6 +1493,7 @@ body {
                 </div>
 
                 <div class="service-card stagger-animation">
+                    <div class="diya" style="margin-bottom: 0.5rem;">🪔</div>
                     <div class="service-icon"><i class="fas fa-compass"></i></div>
                     <h3 id="service6Title">Personal Guidance</h3>
                     <p class="service-short" id="service6Short">One-on-one personalized sessions</p>
@@ -1160,34 +1502,60 @@ body {
                     </div>
                 </div>
             </div>
+
+            <!-- Vastu Torana Banner at Bottom -->
+            <div class="torana" style="margin-top: 2rem;">
+                <div style="text-align: center;">
+                    <span class="lotus">🌸</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- How It Works -->
-    <section id="how-it-works" class="how-it-works">
+    <!-- Vastu Divider -->
+    <div class="vastu-divider">
+        <span class="om-symbol">ॐ</span>
+        <span style="margin: 0 1rem; color: var(--primary-red); opacity: 0.3;">●●●</span>
+        <span class="tree-icon">🌳</span>
+        <span style="margin: 0 1rem; color: var(--primary-red); opacity: 0.3;">●●●</span>
+        <span class="om-symbol">ॐ</span>
+    </div>
+
+    <!-- How It Works Section with Vastu -->
+    <section id="how-it-works" class="how-it-works vastu-zone" style="--zone-x: 50%; --zone-y: 30%;">
         <div class="container">
+            <!-- Vastu Blessing Banner -->
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <div class="vastu-mantra">🙏 नमस्ते | ओम गं गणपतये नमः 🙏</div>
+            </div>
+
             <h2 class="glow-text" id="howTitle">How It Works</h2>
             <p class="section-subtitle" id="howSubtitle">Your Journey to Clarity in Simple Steps</p>
+
             <div class="steps">
                 <div class="step flip-in">
+                    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🕉️</div>
                     <div class="step-number">1</div>
                     <h3 id="step1Title">Schedule Consultation</h3>
                     <p id="step1Desc">Contact us and book your consultation.</p>
                 </div>
                 <div class="step-arrow">→</div>
                 <div class="step flip-in">
+                    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📝</div>
                     <div class="step-number">2</div>
                     <h3 id="step2Title">Share Your Details</h3>
                     <p id="step2Desc">Provide your birth date and name.</p>
                 </div>
                 <div class="step-arrow">→</div>
                 <div class="step flip-in">
+                    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">✨</div>
                     <div class="step-number">3</div>
                     <h3 id="step3Title">In-Depth Analysis</h3>
                     <p id="step3Desc">Thorough numerological analysis.</p>
                 </div>
                 <div class="step-arrow">→</div>
                 <div class="step flip-in">
+                    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🎯</div>
                     <div class="step-number">4</div>
                     <h3 id="step4Title">Receive Guidance</h3>
                     <p id="step4Desc">Get personalized insights.</p>
@@ -1196,13 +1564,28 @@ body {
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="testimonials">
+    <!-- Vastu Divider -->
+    <div class="vastu-divider">
+        <span class="kalash">🏺</span>
+        <span style="margin: 0 1rem; color: var(--primary-red); opacity: 0.3;">✧</span>
+        <span class="lotus">🌸</span>
+        <span style="margin: 0 1rem; color: var(--primary-red); opacity: 0.3;">✧</span>
+        <span class="kalash">🏺</span>
+    </div>
+
+    <!-- Testimonials Section with Vastu -->
+    <section id="testimonials" class="testimonials vastu-zone" style="--zone-x: 70%; --zone-y: 50%;">
         <div class="container">
-            <h2 class="glow-text" id="testimonialsTitle">What Our Clients Say</h2>
-            <p class="section-subtitle" id="testimonialsSubtitle">Real Stories, Real Transformations</p>
+            <!-- Vastu Header -->
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <span class="om-symbol">ॐ</span>
+                <h2 class="glow-text" id="testimonialsTitle">What Our Clients Say</h2>
+                <span class="om-symbol">ॐ</span>
+            </div>
+
             <div class="testimonials-grid">
                 <div class="testimonial-card zoom-in">
+                    <div style="margin-bottom: 0.5rem; font-size: 1.2rem;">☆ आशीर्वाद ☆</div>
                     <div class="stars">★★★★★</div>
                     <p id="testimonial1Text">Yaxita's numerology reading was incredibly accurate!</p>
                     <h4 id="testimonial1Name">Priya Sharma</h4>
@@ -1210,6 +1593,7 @@ body {
                 </div>
 
                 <div class="testimonial-card zoom-in">
+                    <div style="margin-bottom: 0.5rem; font-size: 1.2rem;">☆ आशीर्वाद ☆</div>
                     <div class="stars">★★★★★</div>
                     <p id="testimonial2Text">The birth chart reading was so detailed and insightful.</p>
                     <h4 id="testimonial2Name">Rajesh Patel</h4>
@@ -1217,6 +1601,7 @@ body {
                 </div>
 
                 <div class="testimonial-card zoom-in">
+                    <div style="margin-bottom: 0.5rem; font-size: 1.2rem;">☆ आशीर्वाद ☆</div>
                     <div class="stars">★★★★★</div>
                     <p id="testimonial3Text">Lucky number consultation was helpful!</p>
                     <h4 id="testimonial3Name">Anjali Verma</h4>
@@ -1226,13 +1611,33 @@ body {
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
+    <!-- Vastu Divider -->
+    <div class="vastu-divider">
+        <span class="diya">🪔</span>
+        <span style="margin: 0 1rem; color: var(--primary-red); opacity: 0.3;">●●●</span>
+        <span class="om-symbol">ॐ</span>
+        <span style="margin: 0 1rem; color: var(--primary-red); opacity: 0.3;">●●●</span>
+        <span class="diya">🪔</span>
+    </div>
+
+    <!-- Contact Section with Vastu -->
+    <section id="contact" class="contact vastu-zone" style="--zone-x: 30%; --zone-y: 50%;">
         <div class="container">
+            <!-- Vastu Entrance Arch -->
+            <div style="text-align: center; margin-bottom: 2rem; padding: 1rem;">
+                <div class="vastu-divider">
+                    <span style="font-size: 2rem;">🙏</span>
+                    <span style="margin: 0 1rem; color: var(--primary-red); opacity: 0.3;">entrance</span>
+                    <span style="font-size: 2rem;">🙏</span>
+                </div>
+            </div>
+
             <h2 class="glow-text" id="contactTitle">Get In Touch</h2>
             <p class="section-subtitle" id="contactSubtitle">Ready to Discover Your True Potential?</p>
+
             <div class="contact-wrapper slide-up">
                 <div class="contact-info">
+                    <div class="kalash" style="text-align: center; margin-bottom: 1rem;">🏺</div>
                     <h3 id="contactInfoTitle">Contact Information</h3>
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
@@ -1265,6 +1670,7 @@ body {
                 </div>
 
                 <form class="contact-form" id="contactForm">
+                    <div style="text-align: center; font-size: 2rem; margin-bottom: 1rem;">🪔</div>
                     <div class="form-group">
                         <input type="text" id="name" placeholder="Your Name" required>
                     </div>
@@ -1294,14 +1700,31 @@ body {
                     <p class="form-message" id="formMessage"></p>
                 </form>
             </div>
+
+            <!-- Vastu Blessing at Bottom -->
+            <div style="text-align: center; margin-top: 2rem;">
+                <div class="vastu-mantra">आशीर्वाद | Blessings | આશીર્વાદ</div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer with Vastu -->
     <footer class="footer">
         <div class="container">
+            <!-- Vastu Closing Elements -->
+            <div style="margin-bottom: 1rem; font-size: 1.5rem; opacity: 0.5;">
+                <span class="diya">🪔</span>
+                <span style="margin: 0 1rem;">●</span>
+                <span class="om-symbol">ॐ</span>
+                <span style="margin: 0 1rem;">●</span>
+                <span class="diya">🪔</span>
+            </div>
+
             <p id="footerCopyright">© 2026 Yaxita Barot - Numerology & Life Guidance. All rights reserved.</p>
             <p id="footerTagline">Unlock Your Destiny Through Numbers | Est. 2016</p>
+            
+            <!-- Vastu Blessing -->
+            <p class="vastu-mantra" style="margin-top: 1rem;">शुभं भव सर्वदा | May You Be Blessed Always</p>
         </div>
     </footer>
 
@@ -1433,7 +1856,7 @@ const translations = {
         testimonial3Name: "અંજલી વર્મા",
         testimonial3Location: "બેંગ્લુરુ, ભારત",
         contactTitle: "સંપર્કમાં આવો",
-        contactSubtitle: "તમારી સાચી ક્ષમતા શોધવા માટે તૈયાર છો?",
+        contactSubtitle: "તમારી સાચી ક્ષમતા શોધવા મ���ટે તૈયાર છો?",
         contactInfoTitle: "સંપર્ક માહિતી",
         contactPhoneLabel: "ફોન",
         contactEmailLabel: "ઈમેલ",
@@ -1452,19 +1875,16 @@ const translations = {
 
 let currentLanguage = localStorage.getItem('lang') || 'en';
 
-// ============ CHANGE LANGUAGE ============
 function changeLanguage(lang) {
     console.log('Changing language to:', lang);
     currentLanguage = lang;
     localStorage.setItem('lang', lang);
     
-    // Update button styles
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
     });
     event.target.closest('.lang-btn').classList.add('active');
     
-    // Update all text elements
     updateAllText();
 }
 
@@ -1536,26 +1956,21 @@ function updateAllText() {
     document.getElementById('footerCopyright').textContent = t.footerCopyright;
     document.getElementById('footerTagline').textContent = t.footerTagline;
     
-    // Update form placeholders
     document.getElementById('name').placeholder = currentLanguage === 'en' ? 'Your Name' : 'તમારું નામ';
     document.getElementById('email').placeholder = currentLanguage === 'en' ? 'Your Email' : 'તમારું ઈમેલ';
     document.getElementById('phone').placeholder = currentLanguage === 'en' ? 'Your Phone Number' : 'તમારો ફોન નંબર';
     document.getElementById('message').placeholder = currentLanguage === 'en' ? 'Your Message' : 'તમારો સંદેશ';
 }
 
-// ============ MOBILE MENU ============
 function toggleMenu() {
     const menu = document.getElementById('navMenu');
     menu.classList.toggle('active');
 }
 
-// ============ SERVICE CARD CLICK ============
 document.addEventListener('DOMContentLoaded', () => {
-    // Set initial language
     updateAllText();
     document.querySelectorAll('.lang-btn')[currentLanguage === 'en' ? 0 : 1].classList.add('active');
     
-    // Service card click handler
     document.querySelectorAll('.service-card').forEach(card => {
         card.addEventListener('click', () => {
             document.querySelectorAll('.service-detail').forEach(detail => {
@@ -1565,7 +1980,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Form submission
     document.getElementById('contactForm').addEventListener('submit', (e) => {
         e.preventDefault();
         const msg = document.getElementById('formMessage');
