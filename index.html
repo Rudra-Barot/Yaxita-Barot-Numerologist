@@ -759,17 +759,13 @@ body {
     border-top: 4px solid var(--primary-red);
     cursor: pointer;
     position: relative;
-    overflow: hidden;
-}
-
-.service-card:hover {
-    transform: translateY(-15px);
-    box-shadow: var(--neon-glow);
-    border-top-color: var(--golden);
+    overflow: visible;
+    max-height: 400px;
 }
 
 .service-card.expanded {
     grid-column: 1 / -1;
+    max-height: none;
 }
 
 .service-icon {
@@ -804,7 +800,10 @@ body {
     animation: fadeInUp 0.5s ease-out;
 }
 
-.service-detail.show { display: block; }
+.service-detail.show { 
+    display: block; 
+}
+
 .service-detail p {
     color: var(--light-text);
     line-height: 1.8;
@@ -1449,8 +1448,8 @@ body {
                 <span class="direction-badge" title="West - Learning">पश्चिम</span>
             </div>
 
-            <div class="services-grid">
-                <div class="service-card stagger-animation">
+            <div class="services-grid" id="servicesGrid">
+                <div class="service-card stagger-animation" onclick="expandService(event)">
                     <div class="diya" style="margin-bottom: 0.5rem;">🪔</div>
                     <div class="service-icon"><i class="fas fa-book-open"></i></div>
                     <h3 id="service1Title">Numerology Analysis</h3>
@@ -1460,7 +1459,7 @@ body {
                     </div>
                 </div>
 
-                <div class="service-card stagger-animation">
+                <div class="service-card stagger-animation" onclick="expandService(event)">
                     <div class="diya" style="margin-bottom: 0.5rem;">🪔</div>
                     <div class="service-icon"><i class="fas fa-chart-pie"></i></div>
                     <h3 id="service2Title">Birth Chart Reading</h3>
@@ -1470,7 +1469,7 @@ body {
                     </div>
                 </div>
 
-                <div class="service-card stagger-animation">
+                <div class="service-card stagger-animation" onclick="expandService(event)">
                     <div class="diya" style="margin-bottom: 0.5rem;">🪔</div>
                     <div class="service-icon"><i class="fas fa-dice-one"></i></div>
                     <h3 id="service3Title">Lucky Numbers</h3>
@@ -1480,7 +1479,7 @@ body {
                     </div>
                 </div>
 
-                <div class="service-card stagger-animation">
+                <div class="service-card stagger-animation" onclick="expandService(event)">
                     <div class="diya" style="margin-bottom: 0.5rem;">🪔</div>
                     <div class="service-icon"><i class="fas fa-car"></i></div>
                     <h3 id="service4Title">Car Number Consultation</h3>
@@ -1490,7 +1489,7 @@ body {
                     </div>
                 </div>
 
-                <div class="service-card stagger-animation">
+                <div class="service-card stagger-animation" onclick="expandService(event)">
                     <div class="diya" style="margin-bottom: 0.5rem;">🪔</div>
                     <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
                     <h3 id="service5Title">Phone Number Analysis</h3>
@@ -1500,7 +1499,7 @@ body {
                     </div>
                 </div>
 
-                <div class="service-card stagger-animation">
+                <div class="service-card stagger-animation" onclick="expandService(event)">
                     <div class="diya" style="margin-bottom: 0.5rem;">🪔</div>
                     <div class="service-icon"><i class="fas fa-compass"></i></div>
                     <h3 id="service6Title">Personal Guidance</h3>
@@ -1597,7 +1596,7 @@ body {
                     <div class="stars">★★★★★</div>
                     <p id="testimonial1Text">Yaxita's numerology reading was incredibly accurate and helped me understand my life path better. I'm now making decisions with more confidence!</p>
                     <h4 id="testimonial1Name">Priya Sharma</h4>
-                    <span id="testimonial1Location">Mumbai, India</span>
+                    <span id="testimonial1Location">Patan, Gujarat</span>
                 </div>
 
                 <div class="testimonial-card zoom-in">
@@ -1605,7 +1604,7 @@ body {
                     <div class="stars">★★★★★</div>
                     <p id="testimonial2Text">I was skeptical at first, but the birth chart reading was so detailed and insightful. It completely changed my perspective on my career and relationships.</p>
                     <h4 id="testimonial2Name">Rajesh Patel</h4>
-                    <span id="testimonial2Location">Ahmedabad, India</span>
+                    <span id="testimonial2Location">Patan, Gujarat</span>
                 </div>
 
                 <div class="testimonial-card zoom-in">
@@ -1613,7 +1612,7 @@ body {
                     <div class="stars">★★★★★</div>
                     <p id="testimonial3Text">The lucky number consultation helped me choose the perfect car number. Since then, everything has been going smoothly. Highly recommended!</p>
                     <h4 id="testimonial3Name">Anjali Verma</h4>
-                    <span id="testimonial3Location">Bangalore, India</span>
+                    <span id="testimonial3Location">Patan, Gujarat</span>
                 </div>
             </div>
         </div>
@@ -1658,14 +1657,14 @@ body {
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4 id="contactEmailLabel">Email</h4>
-                            <p><a href="mailto:yaxita@numerology.com">yaxita@numerology.com</a></p>
+                            <p><a href="mailto:yaxitabarot11@gmail.com">yaxitabarot11@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h4 id="contactLocationLabel">Location</h4>
-                            <p id="contactLocation">Ahmedabad, Gujarat, India</p>
+                            <p id="contactLocation">Patan, Gujarat, India</p>
                         </div>
                     </div>
                     <div class="social-links">
@@ -1786,20 +1785,20 @@ const translations = {
         testimonialsSubtitle: "Real Stories, Real Transformations",
         testimonial1Text: "Yaxita's numerology reading was incredibly accurate and helped me understand my life path better. I'm now making decisions with more confidence!",
         testimonial1Name: "Priya Sharma",
-        testimonial1Location: "Mumbai, India",
+        testimonial1Location: "Patan, Gujarat",
         testimonial2Text: "I was skeptical at first, but the birth chart reading was so detailed and insightful. It completely changed my perspective on my career and relationships.",
         testimonial2Name: "Rajesh Patel",
-        testimonial2Location: "Ahmedabad, India",
+        testimonial2Location: "Patan, Gujarat",
         testimonial3Text: "The lucky number consultation helped me choose the perfect car number. Since then, everything has been going smoothly. Highly recommended!",
         testimonial3Name: "Anjali Verma",
-        testimonial3Location: "Bangalore, India",
+        testimonial3Location: "Patan, Gujarat",
         contactTitle: "Get In Touch",
         contactSubtitle: "Ready to Discover Your True Potential?",
         contactInfoTitle: "Contact Information",
         contactPhoneLabel: "Phone",
         contactEmailLabel: "Email",
         contactLocationLabel: "Location",
-        contactLocation: "Ahmedabad, Gujarat, India",
+        contactLocation: "Patan, Gujarat, India",
         contactFollow: "Follow Us",
         contactSubmit: "Send Message",
         footerCopyright: "© 2026 Yaxita Barot - Numerology & Life Guidance. All rights reserved.",
@@ -1826,13 +1825,13 @@ const translations = {
         servicesSubtitle: "ન્યુમરોલોજીકલ આંતરદૃષ્ટિ સાથે તમારા જીવનને રૂપાંતરિત કરો",
         service1Title: "ન્યુમરોલોજી વિશ્લેષણ",
         service1Short: "તમારા જીવન નંબરોનું વ્યાપક વિશ્લેષણ",
-        service1Detail: "તમારા લાઇફ પાથ નંબર, એક્સપ્રેશન નંબર અને પર્સોનાલિટી નંબરનું વિશ્લેષણ મેળવો. દરેક નંબર તમારા વ્યક્તિત્વ, શક્તિ, નબળાઈ અને જીવનના હેતુના વિવિધ પાસાઓ પ્રગટ કરે છે. યક્ષિતા આ સંખ્યાઓ તમારા ભવિષ્ય માટે શું સૂચવે છે અને તમે વ્યક્તિગત વૃદ્ધિ માટે તેનો લાભ કેવી રીતે લઈ શકો તે વિશે વિગતવાર સમજણ આપશે.",
+        service1Detail: "તમારા લાઇફ પાથ નંબર, એક્સપ્રેશન નંબર અને પર્સોનાલિટી નંબરનું વિશ્લેષણ મેળવો. દરેક નંબર તમારા વ્યક્તિત્વ, શક્તિ, નબળાઈ અને જીવનના હેતુના વિવિધ પાસાઓ પ્રગટ કરે ��ે. યક્ષિતા આ સંખ્યાઓ તમારા ભવિષ્ય માટે શું સૂચવે છે અને તમે વ્યક્તિગત વૃદ્ધિ માટે તેનો લાભ કેવી રીતે લઈ શકો તે વિશે વિગતવાર સમજણ આપશે.",
         service2Title: "જન્મ ચાર્ટ વાંચન",
         service2Short: "તમારા જન્મ ચાર્ટનું વિગતવાર વાંચન",
-        service2Detail: "તમારો જન્મ ચાર્ટ તમારા જીવનના બ્રહ્માંડીય બ્લુપ્રિન્ટ જેવો છે. આ ઊંડાણવાળું વાંચન તમારા જન્મ સમયે મૌજૂદ ન્યુમરોલોજીકલ કંપનોનું પરીક્ષણ કરે છે. અમે તમારા ભાગ્ય નંબર, પડકારો અને જીવન ચક્રોનું વિશ્લેષણ કરી તમારા એકંદર જીવન પેટર્નને સમજીએ છીએ. આ સેવા તમને પુનરાવર્તિત પેટર્ન ઓળખવામાં, તમારા કર્માત્મક પાઠ સમજવામાં અને તમારા જીવનના આગામી તબક્કાઓ માટે આત્મવિશ્વાસ સાથે તૈયાર થવામા��� મદદ કરે છે.",
+        service2Detail: "તમારો જન્મ ચાર્ટ તમારા જીવનના બ્રહ્માંડીય બ્લુપ્રિન્ટ જેવો છે. આ ઊંડાણવાળું વાંચન તમારા જન્મ સમયે મૌજૂદ ન્યુમરોલોજીકલ કંપનોનું પરીક્ષણ કરે છે. અમે તમારા ભાગ્ય નંબર, પડકારો અને જીવન ચક્રોનું વિશ્લેષણ કરી તમારા એકંદર જીવન પેટર્નને સમજીએ છીએ. આ સેવા તમને પુનરાવર્તિત પેટર્ન ઓળખવામાં, તમારા કર્માત્મક પાઠ સમજવામાં અને તમારા જીવનના આગામી તબક્કાઓ માટે આત્મવિશ્વાસ સાથે તૈયાર થવામાં મદદ કરે છે.",
         service3Title: "ભાગ્યશાળી નંબરો",
         service3Short: "તમારા ભાગ્યશાળી નંબરો શોધો",
-        service3Detail: "ભાગ્યશાળી નંબરો વ્યક્તિગતકૃત અંક છે જે તમારા ન્યુમરોલોજીકલ પ્રોફાઇલ સાથે સંરેખિત હકારાત્મક ઊર્જા ધરાવે છે. આ સંખ્યાઓ મહત્વપૂર્ણ તારીખો, નિર્ણયો ��ને પ્રયાસ માટે સમૃદ્ધિ અને સફળતા આકર્ષણ કરવા માટે ઉપયોગ કરી શકાય છે. યક્ષિતા જીવનના વિવિધ ક્ષેત્રો - કર્મ, નાણા, સંબંધો અને સ્વાસ્થ્ય માટે તમારા ચોક્કસ ભાગ્યશાળી નંબર ગણતરી કરશે. તમે તમારા રોજિંદા જીવનમાં આ સંખ્યાઓનો વ્યૂહાત્મક રીતે ઉપયોગ કરવા અને હકારાત્મક ફલાફળ વધારવા માટે શીખશો.",
+        service3Detail: "ભાગ્યશાળી નંબરો વ્યક્તિગતકૃત અંક છે જે તમારા ન્યુમરોલોજીકલ પ્રોફાઇલ સાથે સંરેખિત હકારાત્મક ઊર્જા ધરાવે છે. આ સંખ્યાઓ મહત્વપૂર્ણ તારીખો, નિર્ણયો અને પ્રયાસ માટે સમૃદ્ધિ અને સફળતા આકર્ષણ કરવા માટે ઉપયોગ કરી શકાય છે. યક્ષિતા જીવનના વિવિધ ક્ષેત્રો - કર્મ, નાણા, સંબંધો અને સ્વાસ્થ્ય માટે તમારા ચોક્કસ ભાગ્યશાળી નંબર ગણતરી કરશે. તમે તમારા રોજિંદા જીવનમાં આ સંખ્યાઓનો વ્યૂહાત્મક રીતે ઉપયોગ કરવા અને હકારાત્મક ફલાફળ વધારવા માટે શીખશો.",
         service4Title: "કાર નંબર પરામર્શ",
         service4Short: "સંપૂર્ણ કાર નંબર પસંદ કરો",
         service4Detail: "તમારી કારનો નોંધણી નંબર તમારી યાત્રા અને સલામતી પર નોંધપાત્ર અસર ડાલે છે. આ સેવા તમને એવો કાર નંબર પસંદ કરવા અથવા વિશ્લેષણ કરવામાં મદદ કરે છે જે તમારી વ્યક્તિગત ન્યુમરોલોજીના સાથે સુમેળપૂર્ણ રીતે સંરેખિત હોય. સારી રીતે સંરેખિત કાર નંબર સલામતી, સરળ પ્રવાસ અને તમારી યાત્રા દરમિયાન હકારાત્મક અનુભવો વધારી શકે છે. યક્ષિતા સંભવિત કાર નંબરોનું વિશ્લેષણ કરશે અને તમને સૌથી શુભ વિકલ્પ ભલામણ કરશે.",
@@ -1840,36 +1839,36 @@ const translations = {
         service5Short: "તમારા ફોન નંબરની ઊર્જા વિશ્લેષણ કરો",
         service5Detail: "તમારો ફોન નંબર કંપનાત્મક આવર્તન ધરાવે છે જે તમારા સંચાર અને જોડાણોને પ્રભાવિત કરે છે. આ વિશ્લેષણ તમારા મોબાઈલ નંબરના ન્યુમરોલોજીકલ મૂલ્યનું પરીક્ષણ કરે છે કે તે તમારી ક્રિયાપ્રતિક્રિયાઓ, સંબંધો અને વ્યવસાયિક સંચારોને કેવી રીતે પ્રભાવિત કરે છે તે નક્કી કરવા માટે. જો તમારો વર્તમાન નંબર પડકારજનક કંપનાઓ ધરાવે છે, તો યક્ષિતા વૈકલ્પિક સંખ્યા સૂચવી શકે છે જે તમે માટે વધુ સારી રીતે કામ કરશે.",
         service6Title: "વ્યક્તિગત માર્ગદર્શન",
-        service6Short: "વ્યક્તિ-દર-વ્યક્તિ વ્યક્તિગત સત્રો",
-        service6Detail: "તમારી અનન્ય જીવન પરિસ્થિતિ અને પ્રશ્નો માટે ખાસ રીતે તૈયાર કરેલ એક્સક્લુસિવ વ્યક્તિ-દર-વ્યક્તિ પરામર્શ મેળવો. ભલે તમે કર્મ મુશ્કેલીઓ, સંબંધ પડકારો, સ્વાસ્થ્ય ચિંતાઓ અથવા જીવનના મોટા નિર્ણયો પર સ્પષ્ટતા શોધી રહ્યા હો, યક્ષિતા તમારી સંપૂર્ણ ન્યુમરોલોજીકલ પ્રોફાઇલના આધારે કસ્ટમાઇઝ્ડ માર્ગદર્શન પ્રદાન કરે છે.",
+        service6Short: "વ્યક્તિ-દર-વ્યક્તી વ્યક્તિગત સત્રો",
+        service6Detail: "તમારી અનન્ય જીવન પરિસ્થિતિ અને પ્રશ્નો માટે ખાસ રીતે તૈયાર કરેલ એક્સક્લુસિવ વ્યક્તિ-દર-વ્યક્તી પરામર્શ મેળવો. ભલે તમે કર્મ મુશ્કેલીઓ, સંબંધ પડકારો, સ્વાસ્થ્ય ચિંતાઓ અથવા જીવનના મોટા નિર્ણયો પર સ્પષ્ટતા શોધી રહ્યા હો, યક્ષિતા તમારી સંપૂર્ણ ન્યુમરોલોજીકલ પ્રોફાઇલના આધારે કસ્ટમાઇઝ્ડ માર્ગદર્શન પ્રદાન કરે છે.",
         howTitle: "આ કેવી રીતે કામ કરે છે",
         howSubtitle: "સાદા પગલામાં તમારી સ્પષ્ટતાની યાત્રા",
         step1Title: "પરામર્શ શેડ્યુલ કરો",
         step1Desc: "અમેનો સંપર્ક કરો અને તમારો વ્યક્તિગતકૃત પરામર્શ સત્ર બુક કરો.",
         step2Title: "તમારી વિગતો શેર કરો",
-        step2Desc: "તમારો જન્મતારી��, નામ અને તમે જે કોઈ ચોક્કસ ક્ષેત્ર પર માર્ગદર્શન ચાહતા છો તે વિગતો આપો.",
+        step2Desc: "તમારો જન્મતારીખ, નામ અને તમે જે કોઈ ચોક્કસ ક્ષેત્ર પર માર્ગદર્શન ચાહતા છો તે વિગતો આપો.",
         step3Title: "ઊંડાણવાળું વિશ્લેષણ",
         step3Desc: "યક્ષિતા તમારા જીવન નંબરોનું સાવચેતીપૂર્વક ન્યુમરોલોજીકલ વિશ્લેષણ કરે છે.",
         step4Title: "માર્ગદર્શન મેળવો",
         step4Desc: "તમારા જીવન માટે વ્યક્તિગતકૃત સમજણ, ભલામણો અને ક્રિયાશીલ માર્ગદર્શન મેળવો.",
         testimonialsTitle: "આપણા ક્લાયંટો શું કહે છે",
         testimonialsSubtitle: "વાસ્તવિક વાર્તાઓ, વાસ્તવિક રૂપાંતરણો",
-        testimonial1Text: "યક્ષિતાનું ન્યુમરો���ોજી વાંચન અવિશ્વસનીય રીતે સચોટ હતું અને મને મારા જીવન માર્ગને વધુ સારી રીતે સમજવામાં મદદ કરી.",
+        testimonial1Text: "યક્ષિતાનું ન્યુમરોલોજી વાંચન અવિશ્વસનીય રીતે સચોટ હતું અને મને મારા જીવન માર્ગને વધુ સારી રીતે સમજવામાં મદદ કરી.",
         testimonial1Name: "પ્રિયા શર્મા",
-        testimonial1Location: "મુંબઈ, ભારત",
+        testimonial1Location: "પાટણ, ગુજરાત",
         testimonial2Text: "જન્મ ચાર્ટ વાંચન એટલું વિગતવાર અને અંતર્દૃષ્ટિપૂર્ણ હતું!",
         testimonial2Name: "રાજેશ પટેલ",
-        testimonial2Location: "અમદાવાદ, ભારત",
+        testimonial2Location: "પાટણ, ગુજરાત",
         testimonial3Text: "ભાગ્યશાળી નંબર પરામર્શે મને મદદ કરી!",
         testimonial3Name: "અંજલી વર્મા",
-        testimonial3Location: "બેંગ્લુરુ, ભારત",
+        testimonial3Location: "પાટણ, ગુજરાત",
         contactTitle: "સંપર્કમાં આવો",
-        contactSubtitle: "તમારી સાચી ક્ષમતા શોધવા માટે તૈયાર છો?",
+        contactSubtitle: "તમારી સાચી ક્ષમતા શોધવ��� માટે તૈયાર છો?",
         contactInfoTitle: "સંપર્ક માહિતી",
         contactPhoneLabel: "ફોન",
         contactEmailLabel: "ઈમેલ",
         contactLocationLabel: "સ્થાન",
-        contactLocation: "અમદાવાદ, ગુજરાત, ભારત",
+        contactLocation: "પાટણ, ગુજરાત, ભારત",
         contactFollow: "અમને અનુસરો",
         contactSubmit: "સંદેશ મોકલો",
         footerCopyright: "© 2026 યક્ષિતા બરોટ - ન્યુમરોલોજી અને જીવન માર્ગદર્શન. બધા અધિકારો આરક્ષિત.",
@@ -1975,41 +1974,40 @@ function toggleMenu() {
     menu.classList.toggle('active');
 }
 
+// SERVICE CARD EXPAND FUNCTION
+function expandService(event) {
+    const card = event.currentTarget;
+    const isExpanded = card.classList.contains('expanded');
+    
+    // Close all cards
+    document.querySelectorAll('.service-card').forEach(c => {
+        c.classList.remove('expanded');
+        const detail = c.querySelector('.service-detail');
+        if (detail) detail.classList.remove('show');
+    });
+    
+    // Open clicked card
+    if (!isExpanded) {
+        card.classList.add('expanded');
+        const detail = card.querySelector('.service-detail');
+        if (detail) detail.classList.add('show');
+    }
+}
+
+// Close expanded card when clicking outside
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.service-card')) {
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.classList.remove('expanded');
+            const detail = card.querySelector('.service-detail');
+            if (detail) detail.classList.remove('show');
+        });
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     updateAllText();
     document.querySelectorAll('.lang-btn')[currentLanguage === 'en' ? 0 : 1].classList.add('active');
-    
-    // SERVICE CARD CLICK HANDLER - EXPANDABLE DETAILS
-    document.querySelectorAll('.service-card').forEach(card => {
-        card.addEventListener('click', () => {
-            const detail = card.querySelector('.service-detail');
-            const isExpanded = card.classList.contains('expanded');
-            
-            // Close all other expanded cards
-            document.querySelectorAll('.service-card').forEach(otherCard => {
-                otherCard.classList.remove('expanded');
-                const otherDetail = otherCard.querySelector('.service-detail');
-                if (otherDetail) otherDetail.classList.remove('show');
-            });
-            
-            // Toggle current card
-            if (!isExpanded) {
-                card.classList.add('expanded');
-                if (detail) detail.classList.add('show');
-            }
-        });
-    });
-    
-    // Close expanded cards when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.service-card')) {
-            document.querySelectorAll('.service-card').forEach(card => {
-                card.classList.remove('expanded');
-                const detail = card.querySelector('.service-detail');
-                if (detail) detail.classList.remove('show');
-            });
-        }
-    });
     
     document.getElementById('contactForm').addEventListener('submit', (e) => {
         e.preventDefault();
