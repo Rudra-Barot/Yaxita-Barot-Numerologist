@@ -26,7 +26,7 @@
             <div class="nav-wrapper">
                 <div class="logo">
                     <h1>✨ Yaxita Barot</h1>
-                    <p data-en="Numerology & Life Guidance" data-gu="ન્યુમરોલોજી અને જીવન માર્ગદર્શન">Numerology & Life Guidance</p>
+                    <p class="translate" key="subtitle">Numerology & Life Guidance</p>
                 </div>
                 <button class="mobile-menu-btn">
                     <span></span>
@@ -34,45 +34,49 @@
                     <span></span>
                 </button>
                 <ul class="nav-menu">
-                    <li><a href="#home" data-en="Home" data-gu="હોમ">Home</a></li>
-                    <li><a href="#about" data-en="About" data-gu="વિશે">About</a></li>
-                    <li><a href="#services" data-en="Services" data-gu="સેવાઓ">Services</a></li>
-                    <li><a href="#how-it-works" data-en="How It Works" data-gu="આ કેવી રીતે કામ કરે છે">How It Works</a></li>
-                    <li><a href="#testimonials" data-en="Testimonials" data-gu="પ્રશંસાપત્ર">Testimonials</a></li>
-                    <li><a href="#contact" data-en="Contact" data-gu="સંપર્ક">Contact</a></li>
+                    <li><a href="#home" class="translate" key="nav_home">Home</a></li>
+                    <li><a href="#about" class="translate" key="nav_about">About</a></li>
+                    <li><a href="#services" class="translate" key="nav_services">Services</a></li>
+                    <li><a href="#how-it-works" class="translate" key="nav_how">How It Works</a></li>
+                    <li><a href="#testimonials" class="translate" key="nav_testimonials">Testimonials</a></li>
+                    <li><a href="#contact" class="translate" key="nav_contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero parallax" data-speed="0.5">
+        <div class="hero-bg"></div>
         <div class="hero-content">
-            <h1 data-en="Unlock Your Destiny Through Numbers" data-gu="સંખ્યાઓ દ્વારા તમારા ભાગ્યને અનલૉક કરો">Unlock Your Destiny Through Numbers</h1>
-            <p data-en="Discover the hidden meanings of numbers in your life and embrace your true potential" data-gu="તમારા જીવનમાં સંખ્યાઓનો છુપાયેલો અર્થ શોધો અને તમારી સાચી ક્ષમતાને આલિંગન કરો">Discover the hidden meanings of numbers in your life and embrace your true potential</p>
-            <button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" data-en="Get Your Reading Today" data-gu="આજ તમારું વાંચન મેળવો">Get Your Reading Today</button>
+            <div class="glow-effect"></div>
+            <h1 class="translate glitch-text" key="hero_title">Unlock Your Destiny Through Numbers</h1>
+            <p class="translate fade-in-text" key="hero_subtitle">Discover the hidden meanings of numbers in your life and embrace your true potential</p>
+            <button class="cta-btn pulse-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                <span class="translate" key="cta_button">Get Your Reading Today</span>
+            </button>
         </div>
         <div class="hero-overlay"></div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about parallax" data-speed="0.3">
         <div class="container">
             <div class="about-wrapper">
-                <div class="about-content">
-                    <h2 data-en="About Yaxita Barot" data-gu="યક્ષિતા બરોટ વિશે">About Yaxita Barot</h2>
-                    <p data-en="Yaxita Barot is a dedicated numerologist with years of experience in helping individuals understand their life path, personal strengths, and hidden potentials through the ancient science of numerology." data-gu="યક્ષિતા બરોટ એક સમર્પિત ન્યુમરોલોજિસ્ટ છે જે ન્યુમરોલોજીના પ્રાચીન વિજ્ઞાન દ્વારા વ્યક્તિઓને તેમના જીવન માર્ગ, વ્યક્તિગત શક્તિ અને છુપાયેલી ક્ષમતાઓ સમજવામાં મદદ કરવામાં વર્ષોનો અનુભવ ધરાવે છે।">Yaxita Barot is a dedicated numerologist with years of experience in helping individuals understand their life path, personal strengths, and hidden potentials through the ancient science of numerology.</p>
-                    <p data-en="With a deep understanding of numerological principles and spiritual wisdom, Yaxita provides personalized guidance to help you make informed decisions about your career, relationships, health, and personal growth." data-gu="ન્યુમરોલોજીકલ સિદ્ધાંતો અને આધ્યાત્મિક જ્ઞાનની ગভીર સમજ સાથે, યક્ષિતા તમારા કર્મ, સંબંધો, સ્વાસ્થ્ય અને વ્યક્તિગત વૃદ્ધિ વિશે જાણકારી ભરેલા નિર્ણયો લેવામાં મદદ કરવા માટે વ્યક્તિગત માર્ગદર્શન પ્રદાન કરે છે।">With a deep understanding of numerological principles and spiritual wisdom, Yaxita provides personalized guidance to help you make informed decisions about your career, relationships, health, and personal growth.</p>
-                    <p data-en="Whether you're seeking clarity on your life direction or looking to understand the significance of numbers in your daily life, Yaxita's expertise will illuminate your path forward." data-gu="ભલે તમે તમારા જીવનની દિશા પર સ્પષ્ટતા શોધી રહ્યા હો અથવા તમારા રોજિંદા જીવનમાં સંખ્યાઓના મહત્ત્વને સમજવા માંગતા હો, યક્ષિતાની કુશળતા તમારા માર્ગને આગળ તરફ આલોકિત કરશે।">Whether you're seeking clarity on your life direction or looking to understand the significance of numbers in your daily life, Yaxita's expertise will illuminate your path forward.</p>
+                <div class="about-content slide-in-left">
+                    <h2 class="translate glow-text" key="about_title">About Yaxita Barot</h2>
+                    <p class="translate" key="about_p1">Yaxita Barot is a dedicated numerologist with years of experience in helping individuals understand their life path, personal strengths, and hidden potentials through the ancient science of numerology.</p>
+                    <p class="translate" key="about_p2">With a deep understanding of numerological principles and spiritual wisdom, Yaxita provides personalized guidance to help you make informed decisions about your career, relationships, health, and personal growth.</p>
+                    <p class="translate" key="about_p3">Whether you're seeking clarity on your life direction or looking to understand the significance of numbers in your daily life, Yaxita's expertise will illuminate your path forward.</p>
                     <ul class="about-highlights">
-                        <li data-en="✓ 10+ Years of Experience" data-gu="✓ 10+ વર્ષનો અનુભવ">✓ 10+ Years of Experience</li>
-                        <li data-en="✓ 500+ Satisfied Clients" data-gu="✓ 500+ સંતુષ્ટ ક્લાયંટ">✓ 500+ Satisfied Clients</li>
-                        <li data-en="✓ Certified Numerologist" data-gu="✓ પ્રમાણિત ન્યુમરોલોજિસ્ટ">✓ Certified Numerologist</li>
-                        <li data-en="✓ Personalized Consultations" data-gu="✓ વ્યક્તિગત પરામર્શ">✓ Personalized Consultations</li>
+                        <li class="translate" key="about_exp">✓ 10+ Years of Experience</li>
+                        <li class="translate" key="about_clients">✓ 500+ Satisfied Clients</li>
+                        <li class="translate" key="about_cert">✓ Certified Numerologist</li>
+                        <li class="translate" key="about_cons">✓ Personalized Consultations</li>
                     </ul>
                 </div>
-                <div class="about-image">
-                    <div class="placeholder-image">
+                <div class="about-image slide-in-right">
+                    <div class="placeholder-image floating">
                         <i class="fas fa-star"></i>
                     </div>
                 </div>
@@ -81,80 +85,86 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="services" class="services parallax" data-speed="0.4">
         <div class="container">
-            <h2 data-en="Our Services" data-gu="આપણી સેવાઓ">Our Services</h2>
-            <p class="section-subtitle" data-en="Transform Your Life with Numerological Insights" data-gu="ન્યુમરોલોજીકલ આંતરદૃષ્ટિ સાથે તમારા જીવનને રૂપાંતરિત કરો">Transform Your Life with Numerological Insights</p>
+            <h2 class="translate glow-text" key="services_title">Our Services</h2>
+            <p class="section-subtitle translate" key="services_subtitle">Transform Your Life with Numerological Insights</p>
             <div class="services-grid">
                 <!-- Service 1 -->
-                <div class="service-card">
+                <div class="service-card stagger-animation" style="animation-delay: 0.1s">
+                    <div class="card-glow"></div>
                     <div class="service-icon">
                         <i class="fas fa-book-open"></i>
                     </div>
-                    <h3 data-en="Numerology Analysis" data-gu="ન્યુમરોલોજી વિશ્લેષણ">Numerology Analysis</h3>
-                    <p class="service-short" data-en="Comprehensive analysis of your life numbers" data-gu="તમારા જીવન નંબરોનું વ્યાપક વિશ્લેષણ">Comprehensive analysis of your life numbers</p>
+                    <h3 class="translate" key="service1_title">Numerology Analysis</h3>
+                    <p class="service-short translate" key="service1_short">Comprehensive analysis of your life numbers</p>
                     <div class="service-detail">
-                        <p data-en="Get a complete breakdown of your Life Path Number, Expression Number, Soul Urge Number, and Personality Number. Each number reveals different aspects of your personality, strengths, weaknesses, and life purpose. Yaxita will provide detailed insights into what these numbers mean for your future and how you can leverage them for personal growth." data-gu="તમારા લાઇફ પાથ નંબર, એક્સપ્રેશન નંબર, સોલ અર્જ નંબર અને પર્સોનાલિટી નંબરનું સંપૂર્ણ વિશ્લેષણ મેળવો। દરેક નંબર તમારા વ્યક્તિત્વ, શક્તિ, નબળાઈ અને જીવનના હેતુના વિવિધ પાસાઓ પ્રગટ કરે છે। યક્ષિતા આ સંખ્યાઓ તમારા ભવિષ્ય માટે શું સૂચવે છે અને તમે વ્યક્તિગત વૃદ્ધિ માટે તેનો લાભ કેવી રીતે લઈ શકો તે વિશે વિગતવાર સમજણ આપશે।">Get a complete breakdown of your Life Path Number, Expression Number, Soul Urge Number, and Personality Number. Each number reveals different aspects of your personality, strengths, weaknesses, and life purpose. Yaxita will provide detailed insights into what these numbers mean for your future and how you can leverage them for personal growth.</p>
+                        <p class="translate" key="service1_detail">Get a complete breakdown of your Life Path Number, Expression Number, Soul Urge Number, and Personality Number. Each number reveals different aspects of your personality, strengths, weaknesses, and life purpose. Yaxita will provide detailed insights into what these numbers mean for your future and how you can leverage them for personal growth.</p>
                     </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="service-card">
+                <div class="service-card stagger-animation" style="animation-delay: 0.2s">
+                    <div class="card-glow"></div>
                     <div class="service-icon">
                         <i class="fas fa-chart-pie"></i>
                     </div>
-                    <h3 data-en="Birth Chart Reading" data-gu="જન્મ ચાર્ટ વાંચન">Birth Chart Reading</h3>
-                    <p class="service-short" data-en="Detailed reading of your birth chart" data-gu="તમારા જન્મ ચાર્ટનું વિગતવાર વાંચન">Detailed reading of your birth chart</p>
+                    <h3 class="translate" key="service2_title">Birth Chart Reading</h3>
+                    <p class="service-short translate" key="service2_short">Detailed reading of your birth chart</p>
                     <div class="service-detail">
-                        <p data-en="Your birth chart is like a cosmic blueprint of your life. This in-depth reading examines the numerological vibrations present at the time of your birth. We analyze your destiny number, challenges, and life cycles to understand your overall life pattern. This service helps you recognize recurring patterns, understand your karmic lessons, and prepare for upcoming phases of your life with confidence." data-gu="તમારો જન્મ ચાર્ટ તમારા જીવનના બ્રહ્માંડીય બ્લુપ્રિન્ટ જેવો છે। આ ઊંડાણવાળું વાંચન તમારા જન્મ સમયે મૌજૂદ ન્યુમરોલોજીકલ કંપનોનું પરીક્ષણ કરે છે। અમે તમારા ભાગ્ય નંબર, પડકારો અને જીવન ચક્રોનું વિશ્લેષણ કરી તમારા એકંદર જીવન પેટર્નને સમજીએ છીએ। આ સેવા તમને પુનરાવર્તિત પેટર્ન ઓળખવામાં, તમારા કર્માત્મક પાઠ સમજવામાં અને તમારા જીવનના આગામી તબક્કાઓ માટે આત્મવિશ્વાસ સાથે તૈયાર થવામાં મદદ કરે છે।">Your birth chart is like a cosmic blueprint of your life. This in-depth reading examines the numerological vibrations present at the time of your birth. We analyze your destiny number, challenges, and life cycles to understand your overall life pattern. This service helps you recognize recurring patterns, understand your karmic lessons, and prepare for upcoming phases of your life with confidence.</p>
+                        <p class="translate" key="service2_detail">Your birth chart is like a cosmic blueprint of your life. This in-depth reading examines the numerological vibrations present at the time of your birth. We analyze your destiny number, challenges, and life cycles to understand your overall life pattern. This service helps you recognize recurring patterns, understand your karmic lessons, and prepare for upcoming phases of your life with confidence.</p>
                     </div>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="service-card">
+                <div class="service-card stagger-animation" style="animation-delay: 0.3s">
+                    <div class="card-glow"></div>
                     <div class="service-icon">
                         <i class="fas fa-dice-one"></i>
                     </div>
-                    <h3 data-en="Lucky Numbers" data-gu="ભાગ્યશાળી નંબરો">Lucky Numbers</h3>
-                    <p class="service-short" data-en="Discover your lucky numbers" data-gu="તમારા ભાગ્યશાળી નંબરો શોધો">Discover your lucky numbers</p>
+                    <h3 class="translate" key="service3_title">Lucky Numbers</h3>
+                    <p class="service-short translate" key="service3_short">Discover your lucky numbers</p>
                     <div class="service-detail">
-                        <p data-en="Lucky numbers are personalized digits that carry positive vibrational energy aligned with your numerological profile. These numbers can be used for important dates, decisions, and endeavors to attract prosperity and success. Yaxita will calculate your specific lucky numbers for different areas of life - career, finance, relationships, and health. You'll learn how to use these numbers strategically in your daily life to enhance positive outcomes." data-gu="ભાગ્યશાળી નંબરો વ્યક્તિગતકૃત અંક છે જે તમારા ન્યુમરોલોજીકલ પ્રોફાઇલ સાથે સંરેખિત હકારાત્મક કંપનાત્મક ઊર્જા ધરાવે છે। આ સંખ્યાઓ મહત્વપૂર્ણ તારીખો, નિર્ણયો અને પ્રયાસ માટે સમૃદ્ધિ અને સફળતા આકર્ષણ કરવા માટે ઉપયોગ કરી શકાય છે। યક્ષિતા જીવનના વિવિધ ક્ષેત્રો - કર્ম, નાણા, સંબંધો અને સ્વાસ્થ્ય માટે તમારા ચોક્કસ ભાગ્યશાળી નંબર ગણતરી કરશે। તમે તમારા રોજિંદા જીવનમાં આ સંખ્યાઓનો વ્યૂહાત્મક રીતે ઉપયોગ કરવા અને હકારાત્મક ફલાફળ વધારવા માટે શીખશો।">Lucky numbers are personalized digits that carry positive vibrational energy aligned with your numerological profile. These numbers can be used for important dates, decisions, and endeavors to attract prosperity and success. Yaxita will calculate your specific lucky numbers for different areas of life - career, finance, relationships, and health. You'll learn how to use these numbers strategically in your daily life to enhance positive outcomes.</p>
+                        <p class="translate" key="service3_detail">Lucky numbers are personalized digits that carry positive vibrational energy aligned with your numerological profile. These numbers can be used for important dates, decisions, and endeavors to attract prosperity and success. Yaxita will calculate your specific lucky numbers for different areas of life - career, finance, relationships, and health. You'll learn how to use these numbers strategically in your daily life to enhance positive outcomes.</p>
                     </div>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="service-card">
+                <div class="service-card stagger-animation" style="animation-delay: 0.4s">
+                    <div class="card-glow"></div>
                     <div class="service-icon">
                         <i class="fas fa-car"></i>
                     </div>
-                    <h3 data-en="Car Number Consultation" data-gu="કાર નંબર પરામર્શ">Car Number Consultation</h3>
-                    <p class="service-short" data-en="Choose the perfect car number" data-gu="સંપૂર્ણ કાર નંબર પસંદ કરો">Choose the perfect car number</p>
+                    <h3 class="translate" key="service4_title">Car Number Consultation</h3>
+                    <p class="service-short translate" key="service4_short">Choose the perfect car number</p>
                     <div class="service-detail">
-                        <p data-en="Your car's registration number has a significant impact on your journey and safety. This service helps you select or analyze a car number that aligns harmoniously with your personal numerology. A well-aligned car number can enhance safety, smooth travel, and positive experiences during your journeys. Yaxita will analyze potential car numbers and recommend the most auspicious options for you, ensuring your vehicle carries vibrations that support your well-being." data-gu="તમારી કારનો નોંધણી નંબર તમારી યાત્રા અને સલામતી પર નોંધપાત્ર અસર ડાલે છે। આ સેવા તમને એવો કાર નંબર પસંદ કરવા અથવા વિશ્લેષણ કરવામાં મદદ કરે છે જે તમારી વ્યક્તિગત ન્યુમરોલોજીના સાથે સુમેળપૂર્ણ રીતે સંરેખિત હોય। સારી રીતે સંરેખિત કાર નંબર સલામતી, સરળ પ્રવાસ અને તમારી યાત્રા દરમિયાન હકારાત્મક અનુભવો વધારી શકે છે। યક્ષિતા સંભવિત કાર નંબરોનું વિશ્લેષણ કરશે અને તમને સૌથી શુભ વિકલ્પ ભલામણ કરશે, તમારા વાહનને તમારી સુખાકારીને સમર્થન આપતી કંપનાઓ સાથે સુનિશ્ચિત કરશે।">Your car's registration number has a significant impact on your journey and safety. This service helps you select or analyze a car number that aligns harmoniously with your personal numerology. A well-aligned car number can enhance safety, smooth travel, and positive experiences during your journeys. Yaxita will analyze potential car numbers and recommend the most auspicious options for you, ensuring your vehicle carries vibrations that support your well-being.</p>
+                        <p class="translate" key="service4_detail">Your car's registration number has a significant impact on your journey and safety. This service helps you select or analyze a car number that aligns harmoniously with your personal numerology. A well-aligned car number can enhance safety, smooth travel, and positive experiences during your journeys. Yaxita will analyze potential car numbers and recommend the most auspicious options for you, ensuring your vehicle carries vibrations that support your well-being.</p>
                     </div>
                 </div>
 
                 <!-- Service 5 -->
-                <div class="service-card">
+                <div class="service-card stagger-animation" style="animation-delay: 0.5s">
+                    <div class="card-glow"></div>
                     <div class="service-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3 data-en="Phone Number Analysis" data-gu="ફોન નંબર વિશ્લેષણ">Phone Number Analysis</h3>
-                    <p class="service-short" data-en="Analyze your phone number's energy" data-gu="તમારા ફોન નંબરની ઊર્જા વિશ્લેષણ કરો">Analyze your phone number's energy</p>
+                    <h3 class="translate" key="service5_title">Phone Number Analysis</h3>
+                    <p class="service-short translate" key="service5_short">Analyze your phone number's energy</p>
                     <div class="service-detail">
-                        <p data-en="Your phone number carries vibrational frequency that affects your communication and connections. This analysis examines the numerological value of your mobile number to determine how it influences your interactions, relationships, and business communications. If your current number carries challenging vibrations, Yaxita can suggest alternative numbers that would serve you better. A harmonious phone number can improve communication clarity, strengthen relationships, and attract better opportunities." data-gu="તમારો ફોન નંબર કંપનાત્મક આવર્તન ધરાવે છે જે તમારા સંચાર અને જોડાણોને પ્રભાવિત કરે છે। આ વિશ્લેષણ તમારા મોબાઈલ નંબરના ન્યુમરોલોજીકલ મૂલ્યનું પરીક્ષણ કરે છે કે તે તમારી ક્રિયાપ્રતિક્રિયાઓ, સંબંધો અને વ્યવસાયિક સંચારોને કેવી રીતે પ્રભાવિત કરે છે તે નક્કી કરવા માટે. જો તમારો વર્તમાન નંબર પડકારજનક કંપનાઓ ધરાવે છે, તો યક્ષિતા વૈકલ્પિક સંખ્યા સૂચવી શકે છે જે તમે માટે વધુ સારી રીતે કામ કરશે. એક સુમેળપૂર્ણ ફોન નંબર સંચાર સ્પષ્ટતા, સંબંધો શક્તિશાળી કરવા અને વધુ સારી તકો આકર્ષણ કરી શકે છે।">Your phone number carries vibrational frequency that affects your communication and connections. This analysis examines the numerological value of your mobile number to determine how it influences your interactions, relationships, and business communications. If your current number carries challenging vibrations, Yaxita can suggest alternative numbers that would serve you better. A harmonious phone number can improve communication clarity, strengthen relationships, and attract better opportunities.</p>
+                        <p class="translate" key="service5_detail">Your phone number carries vibrational frequency that affects your communication and connections. This analysis examines the numerological value of your mobile number to determine how it influences your interactions, relationships, and business communications. If your current number carries challenging vibrations, Yaxita can suggest alternative numbers that would serve you better. A harmonious phone number can improve communication clarity, strengthen relationships, and attract better opportunities.</p>
                     </div>
                 </div>
 
                 <!-- Service 6 -->
-                <div class="service-card">
+                <div class="service-card stagger-animation" style="animation-delay: 0.6s">
+                    <div class="card-glow"></div>
                     <div class="service-icon">
                         <i class="fas fa-compass"></i>
                     </div>
-                    <h3 data-en="Personal Guidance" data-gu="વ્યક્તિગત માર્ગદર્શન">Personal Guidance</h3>
-                    <p class="service-short" data-en="One-on-one personalized sessions" data-gu="વ્યક્તિ-દર-વ્યક્તિ વ્યક્તિગત સત્રો">One-on-one personalized sessions</p>
+                    <h3 class="translate" key="service6_title">Personal Guidance</h3>
+                    <p class="service-short translate" key="service6_short">One-on-one personalized sessions</p>
                     <div class="service-detail">
-                        <p data-en="Get exclusive one-on-one consultation tailored specifically to your unique life situation and questions. Whether you're facing career dilemmas, relationship challenges, health concerns, or seeking clarity on major life decisions, Yaxita provides customized guidance based on your complete numerological profile. These sessions are deeply personal, addressing your specific concerns while providing actionable insights you can implement immediately. Perfect for those seeking comprehensive life direction and support." data-gu="તમારી અનન્ય જીવન પરિસ્થિતિ અને પ્રશ્નો માટે ખાસ રીતે તૈયાર કરેલ એક્સક્લુસિવ વ્યક્તિ-દર-વ્યક્તિ પરામર્શ મેળવો. ભલે તમે કર્મ મુશ્કેલીઓ, સંબંધ પડકારો, સ્વાસ્થ્ય ચિંતાઓ અથવા જીવનના મોટા નિર્ણયો પર સ્પષ્ટતા શોધી રહ્યા હો, યક્ષિતા તમારી સંપૂર્ણ ન્યુમરોલોજીકલ પ્રોફાઇલના આધારે કસ્ટમ��ઇઝ્ડ માર્ગદર્શન પ્રદાન કરે છે. આ સત્રો ઊંડાણથી વ્યક્તિગત છે, તમારી ચોક્કસ ચિંતાઓને સંબોધિત કરે છે જ્યારે તમે તરત જ અમલમાં લાવી શકો તેવી ક્રિયાશીલ સમજણ પ્રદાન કરે છે। વ્યાપક જીવન દિશા અને સમર્થન શોધતા લોકો માટે પરફેક્ટ।">Get exclusive one-on-one consultation tailored specifically to your unique life situation and questions. Whether you're facing career dilemmas, relationship challenges, health concerns, or seeking clarity on major life decisions, Yaxita provides customized guidance based on your complete numerological profile. These sessions are deeply personal, addressing your specific concerns while providing actionable insights you can implement immediately. Perfect for those seeking comprehensive life direction and support.</p>
+                        <p class="translate" key="service6_detail">Get exclusive one-on-one consultation tailored specifically to your unique life situation and questions. Whether you're facing career dilemmas, relationship challenges, health concerns, or seeking clarity on major life decisions, Yaxita provides customized guidance based on your complete numerological profile. These sessions are deeply personal, addressing your specific concerns while providing actionable insights you can implement immediately. Perfect for those seeking comprehensive life direction and support.</p>
                     </div>
                 </div>
             </div>
@@ -162,45 +172,45 @@
     </section>
 
     <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works">
+    <section id="how-it-works" class="how-it-works parallax" data-speed="0.3">
         <div class="container">
-            <h2 data-en="How It Works" data-gu="આ કેવી રીતે કામ કરે છે">How It Works</h2>
-            <p class="section-subtitle" data-en="Your Journey to Clarity in Simple Steps" data-gu="સાદા પગલામાં તમારી સ્પષ્ટતાની યાત્રા">Your Journey to Clarity in Simple Steps</p>
+            <h2 class="translate glow-text" key="how_title">How It Works</h2>
+            <p class="section-subtitle translate" key="how_subtitle">Your Journey to Clarity in Simple Steps</p>
             <div class="steps">
-                <div class="step">
+                <div class="step flip-in" style="animation-delay: 0s">
                     <div class="step-number">1</div>
-                    <h3 data-en="Schedule Consultation" data-gu="પરામર્શ શેડ્યુલ કરો">Schedule Consultation</h3>
-                    <p data-en="Contact us and book your personalized numerology consultation session." data-gu="અમેનો સંપર્ક કરો અને તમારો વ્યક્તિગતકૃત ન્યુમરોલોજી પરામર્શ સત્ર બુક કરો.">Contact us and book your personalized numerology consultation session.</p>
+                    <h3 class="translate" key="step1_title">Schedule Consultation</h3>
+                    <p class="translate" key="step1_desc">Contact us and book your personalized numerology consultation session.</p>
                 </div>
                 <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
-                <div class="step">
+                <div class="step flip-in" style="animation-delay: 0.2s">
                     <div class="step-number">2</div>
-                    <h3 data-en="Share Your Details" data-gu="તમારી વિગતો શેર કરો">Share Your Details</h3>
-                    <p data-en="Provide your birth date, name, and any specific areas you'd like guidance on." data-gu="તમારો જન્મતારીખ, નામ અને તમે જે કોઈ ચોક્કસ ક્ષેત્ર પર માર્ગદર્શન ચાહતા છો તે વિગતો આપો.">Provide your birth date, name, and any specific areas you'd like guidance on.</p>
+                    <h3 class="translate" key="step2_title">Share Your Details</h3>
+                    <p class="translate" key="step2_desc">Provide your birth date, name, and any specific areas you'd like guidance on.</p>
                 </div>
                 <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
-                <div class="step">
+                <div class="step flip-in" style="animation-delay: 0.4s">
                     <div class="step-number">3</div>
-                    <h3 data-en="In-Depth Analysis" data-gu="ઊંડાણવાળું વિશ્લેષણ">In-Depth Analysis</h3>
-                    <p data-en="Yaxita performs a thorough numerological analysis of your life numbers." data-gu="યક્ષિતા તમારા જીવન નંબરોનું સાવચેતીપૂર્વક ન્યુમરોલોજીકલ વિશ્લેષણ કરે છે.">Yaxita performs a thorough numerological analysis of your life numbers.</p>
+                    <h3 class="translate" key="step3_title">In-Depth Analysis</h3>
+                    <p class="translate" key="step3_desc">Yaxita performs a thorough numerological analysis of your life numbers.</p>
                 </div>
                 <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
-                <div class="step">
+                <div class="step flip-in" style="animation-delay: 0.6s">
                     <div class="step-number">4</div>
-                    <h3 data-en="Receive Guidance" data-gu="માર્ગદર્શન મેળવો">Receive Guidance</h3>
-                    <p data-en="Get personalized insights, recommendations, and actionable guidance for your life." data-gu="તમારા જીવન માટે વ્યક્તિગતકૃત સમજણ, ભલામણો અને ક્રિયાશીલ માર્ગદર્શન મેળવો.">Get personalized insights, recommendations, and actionable guidance for your life.</p>
+                    <h3 class="translate" key="step4_title">Receive Guidance</h3>
+                    <p class="translate" key="step4_desc">Get personalized insights, recommendations, and actionable guidance for your life.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
+    <section id="testimonials" class="testimonials parallax" data-speed="0.4">
         <div class="container">
-            <h2 data-en="What Our Clients Say" data-gu="આપણા ક્લાયંટો શું કહે છે">What Our Clients Say</h2>
-            <p class="section-subtitle" data-en="Real Stories, Real Transformations" data-gu="વાસ્તવિક વાર્તાઓ, વાસ્તવિક રૂપાંતરણો">Real Stories, Real Transformations</p>
+            <h2 class="translate glow-text" key="testimonials_title">What Our Clients Say</h2>
+            <p class="section-subtitle translate" key="testimonials_subtitle">Real Stories, Real Transformations</p>
             <div class="testimonials-grid">
-                <div class="testimonial-card">
+                <div class="testimonial-card zoom-in" style="animation-delay: 0.1s">
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -208,12 +218,12 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p data-en="Yaxita's numerology reading was incredibly accurate and helped me understand my life path better. I'm now making decisions with more confidence!" data-gu="યક્ષિતાનું ન્યુમરોલોજી વાંચન અવિશ્વસનીય રીતે સચોટ હતું અને મને મારા જીવન માર્ગને વધુ સારી રીતે સમજવામાં મદદ કરી. હું હવે વધુ આત્મવિશ્વાસ સાથે નિર્ણયો લઈ રહ્યો છું!">Yaxita's numerology reading was incredibly accurate and helped me understand my life path better. I'm now making decisions with more confidence!</p>
-                    <h4 data-en="Priya Sharma" data-gu="પ્રિયા શર્મા">Priya Sharma</h4>
-                    <span data-en="Mumbai, India" data-gu="મુંબઈ, ભારત">Mumbai, India</span>
+                    <p class="translate" key="testimonial1_text">Yaxita's numerology reading was incredibly accurate and helped me understand my life path better. I'm now making decisions with more confidence!</p>
+                    <h4 class="translate" key="testimonial1_name">Priya Sharma</h4>
+                    <span class="translate" key="testimonial1_location">Mumbai, India</span>
                 </div>
 
-                <div class="testimonial-card">
+                <div class="testimonial-card zoom-in" style="animation-delay: 0.2s">
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -221,12 +231,12 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p data-en="I was skeptical at first, but the birth chart reading was so detailed and insightful. It completely changed my perspective on my career and relationships." data-gu="શરૂઆતમાં હું શંકાશીલ હતો, પરંતુ જન્મ ચાર્ટ વાંચન એટલું વિગતવાર અને અંતર્દૃષ્ટિપૂર્ણ હતું. તેણે મારા કર્મ અને સંબંધો પ્રતિ મારો દૃષ્ટિકોણ સંપૂર્ણપણે બદલી દીધો.">I was skeptical at first, but the birth chart reading was so detailed and insightful. It completely changed my perspective on my career and relationships.</p>
-                    <h4 data-en="Rajesh Patel" data-gu="રાજેશ પટેલ">Rajesh Patel</h4>
-                    <span data-en="Ahmedabad, India" data-gu="અમદાવાદ, ભારત">Ahmedabad, India</span>
+                    <p class="translate" key="testimonial2_text">I was skeptical at first, but the birth chart reading was so detailed and insightful. It completely changed my perspective on my career and relationships.</p>
+                    <h4 class="translate" key="testimonial2_name">Rajesh Patel</h4>
+                    <span class="translate" key="testimonial2_location">Ahmedabad, India</span>
                 </div>
 
-                <div class="testimonial-card">
+                <div class="testimonial-card zoom-in" style="animation-delay: 0.3s">
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -234,45 +244,45 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p data-en="The lucky number consultation helped me choose the perfect car number. Since then, everything has been going smoothly. Highly recommended!" data-gu="ભાગ્યશાળી નંબર પરામર્શે મને સંપૂર્ણ કાર નંબર પસંદ કરવામાં મદદ કરી. ત્યારથી, બધું સરળતાથી ચાલી રહ્યું છે. અત્યંત ભલામણ!">The lucky number consultation helped me choose the perfect car number. Since then, everything has been going smoothly. Highly recommended!</p>
-                    <h4 data-en="Anjali Verma" data-gu="અંજલી વર્મા">Anjali Verma</h4>
-                    <span data-en="Bangalore, India" data-gu="બેંગ્લુરુ, ભારત">Bangalore, India</span>
+                    <p class="translate" key="testimonial3_text">The lucky number consultation helped me choose the perfect car number. Since then, everything has been going smoothly. Highly recommended!</p>
+                    <h4 class="translate" key="testimonial3_name">Anjali Verma</h4>
+                    <span class="translate" key="testimonial3_location">Bangalore, India</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact parallax" data-speed="0.3">
         <div class="container">
-            <h2 data-en="Get In Touch" data-gu="સંપર્કમાં આવો">Get In Touch</h2>
-            <p class="section-subtitle" data-en="Ready to Discover Your True Potential?" data-gu="તમારી સાચી ક્ષમતા શોધવા માટે તૈયાર છો?">Ready to Discover Your True Potential?</p>
-            <div class="contact-wrapper">
+            <h2 class="translate glow-text" key="contact_title">Get In Touch</h2>
+            <p class="section-subtitle translate" key="contact_subtitle">Ready to Discover Your True Potential?</p>
+            <div class="contact-wrapper slide-up">
                 <div class="contact-info">
-                    <h3 data-en="Contact Information" data-gu="સંપર્ક માહિતી">Contact Information</h3>
+                    <h3 class="translate" key="contact_info_title">Contact Information</h3>
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4 data-en="Phone" data-gu="ફોન">Phone</h4>
+                            <h4 class="translate" key="contact_phone_label">Phone</h4>
                             <p><a href="tel:+916356519291">+91 63565 19291</a></p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4 data-en="Email" data-gu="ઈમેલ">Email</h4>
+                            <h4 class="translate" key="contact_email_label">Email</h4>
                             <p><a href="mailto:yaxita@numerology.com">yaxita@numerology.com</a></p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4 data-en="Location" data-gu="સ્થાન">Location</h4>
-                            <p data-en="Ahmedabad, Gujarat, India" data-gu="અમદાવાદ, ગુજરાત, ભારત">Ahmedabad, Gujarat, India</p>
+                            <h4 class="translate" key="contact_location_label">Location</h4>
+                            <p class="translate" key="contact_location">Ahmedabad, Gujarat, India</p>
                         </div>
                     </div>
                     <div class="social-links">
-                        <h4 data-en="Follow Us" data-gu="અમને અનુસરો">Follow Us</h4>
+                        <h4 class="translate" key="contact_follow">Follow Us</h4>
                         <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -282,29 +292,31 @@
 
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" data-en-placeholder="Your Name" data-gu-placeholder="તમારું નામ" required id="name">
+                        <input type="text" placeholder="Your Name" required id="name">
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" data-en-placeholder="Your Email" data-gu-placeholder="તમારું ઈમેલ" required id="email">
+                        <input type="email" placeholder="Your Email" required id="email">
                     </div>
                     <div class="form-group">
-                        <input type="tel" placeholder="Your Phone Number" data-en-placeholder="Your Phone Number" data-gu-placeholder="તમારો ફોન નંબર" required id="phone">
+                        <input type="tel" placeholder="Your Phone Number" required id="phone">
                     </div>
                     <div class="form-group">
                         <select required id="service">
-                            <option value="" data-en="Select a Service" data-gu="સેવા પસંદ કરો">Select a Service</option>
-                            <option value="numerology" data-en="Numerology Analysis" data-gu="ન્યુમરોલોજી વિશ્લેષણ">Numerology Analysis</option>
-                            <option value="birth-chart" data-en="Birth Chart Reading" data-gu="જન્મ ચાર્ટ વાંચન">Birth Chart Reading</option>
-                            <option value="lucky-numbers" data-en="Lucky Numbers" data-gu="ભાગ્યશાળી નંબરો">Lucky Numbers</option>
-                            <option value="car-number" data-en="Car Number Consultation" data-gu="કાર નંબર પરામર્શ">Car Number Consultation</option>
-                            <option value="phone-number" data-en="Phone Number Analysis" data-gu="ફોન નંબર વિશ્લેષણ">Phone Number Analysis</option>
-                            <option value="personal-guidance" data-en="Personal Guidance" data-gu="વ્યક્તિગત માર્ગદર્શન">Personal Guidance</option>
+                            <option value="">Select a Service</option>
+                            <option value="numerology">Numerology Analysis</option>
+                            <option value="birth-chart">Birth Chart Reading</option>
+                            <option value="lucky-numbers">Lucky Numbers</option>
+                            <option value="car-number">Car Number Consultation</option>
+                            <option value="phone-number">Phone Number Analysis</option>
+                            <option value="personal-guidance">Personal Guidance</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" data-en-placeholder="Your Message" data-gu-placeholder="તમારો સંદેશ" rows="5" required id="message"></textarea>
+                        <textarea placeholder="Your Message" rows="5" required id="message"></textarea>
                     </div>
-                    <button type="submit" class="submit-btn" data-en="Send Message" data-gu="સંદેશ મોકલો">Send Message</button>
+                    <button type="submit" class="submit-btn neon-btn">
+                        <span class="translate" key="contact_submit">Send Message</span>
+                    </button>
                     <p class="form-message" id="formMessage"></p>
                 </form>
             </div>
@@ -314,11 +326,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p data-en="© 2026 Yaxita Barot - Numerology & Life Guidance. All rights reserved." data-gu="© 2026 યક્ષિતા બરોટ - ન્યુમરોલોજી અને જીવન માર્ગદર્શન. બધા અધિકારો આરક્ષિત.">© 2026 Yaxita Barot - Numerology & Life Guidance. All rights reserved.</p>
-            <p data-en="Unlock Your Destiny Through Numbers | Est. 2016" data-gu="સંખ્યાઓ દ્વારા તમારા ભાગ્યને અનલૉક કરો | 2016માં સ્થાપિત">Unlock Your Destiny Through Numbers | Est. 2016</p>
+            <p class="translate" key="footer_copyright">© 2026 Yaxita Barot - Numerology & Life Guidance. All rights reserved.</p>
+            <p class="translate" key="footer_tagline">Unlock Your Destiny Through Numbers | Est. 2016</p>
         </div>
     </footer>
 
+    <script src="languages.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
