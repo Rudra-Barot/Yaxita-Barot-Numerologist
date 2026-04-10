@@ -768,6 +768,10 @@ body {
     border-top-color: var(--golden);
 }
 
+.service-card.expanded {
+    grid-column: 1 / -1;
+}
+
 .service-icon {
     font-size: 3rem;
     color: var(--primary-red);
@@ -1183,6 +1187,10 @@ body {
         gap: 20px;
     }
 
+    .service-card.expanded {
+        grid-column: 1;
+    }
+
     .steps {
         flex-direction: column;
     }
@@ -1418,7 +1426,7 @@ body {
         <span class="lotus">🌸</span>
     </div>
 
-    <!-- Services Section with Vastu -->
+    <!-- Services Section with Vastu and EXPANDABLE CARDS -->
     <section id="services" class="services vastu-zone" style="--zone-x: 50%; --zone-y: 50%;">
         <div class="container">
             <!-- Vastu Torana Banner -->
@@ -1448,7 +1456,7 @@ body {
                     <h3 id="service1Title">Numerology Analysis</h3>
                     <p class="service-short" id="service1Short">Comprehensive analysis of your life numbers</p>
                     <div class="service-detail">
-                        <p id="service1Detail">Get a complete breakdown of your Life Path Number, Expression Number, Soul Urge Number, and Personality Number.</p>
+                        <p id="service1Detail">Get a complete breakdown of your Life Path Number, Expression Number, Soul Urge Number, and Personality Number. Each number reveals different aspects of your personality, strengths, weaknesses, and life purpose. Yaxita will provide detailed insights into what these numbers mean for your future and how you can leverage them for personal growth.</p>
                     </div>
                 </div>
 
@@ -1458,7 +1466,7 @@ body {
                     <h3 id="service2Title">Birth Chart Reading</h3>
                     <p class="service-short" id="service2Short">Detailed reading of your birth chart</p>
                     <div class="service-detail">
-                        <p id="service2Detail">Your birth chart is like a cosmic blueprint of your life.</p>
+                        <p id="service2Detail">Your birth chart is like a cosmic blueprint of your life. This in-depth reading examines the numerological vibrations present at the time of your birth. We analyze your destiny number, challenges, and life cycles to understand your overall life pattern. This service helps you recognize recurring patterns, understand your karmic lessons, and prepare for upcoming phases of your life with confidence.</p>
                     </div>
                 </div>
 
@@ -1468,7 +1476,7 @@ body {
                     <h3 id="service3Title">Lucky Numbers</h3>
                     <p class="service-short" id="service3Short">Discover your lucky numbers</p>
                     <div class="service-detail">
-                        <p id="service3Detail">Lucky numbers are personalized digits that carry positive energy.</p>
+                        <p id="service3Detail">Lucky numbers are personalized digits that carry positive vibrational energy aligned with your numerological profile. These numbers can be used for important dates, decisions, and endeavors to attract prosperity and success. Yaxita will calculate your specific lucky numbers for different areas of life - career, finance, relationships, and health. You'll learn how to use these numbers strategically in your daily life to enhance positive outcomes.</p>
                     </div>
                 </div>
 
@@ -1478,7 +1486,7 @@ body {
                     <h3 id="service4Title">Car Number Consultation</h3>
                     <p class="service-short" id="service4Short">Choose the perfect car number</p>
                     <div class="service-detail">
-                        <p id="service4Detail">Your car's registration number impacts your journey and safety.</p>
+                        <p id="service4Detail">Your car's registration number has a significant impact on your journey and safety. This service helps you select or analyze a car number that aligns harmoniously with your personal numerology. A well-aligned car number can enhance safety, smooth travel, and positive experiences during your journeys. Yaxita will analyze potential car numbers and recommend the most auspicious options for you, ensuring your vehicle carries vibrations that support your well-being.</p>
                     </div>
                 </div>
 
@@ -1488,7 +1496,7 @@ body {
                     <h3 id="service5Title">Phone Number Analysis</h3>
                     <p class="service-short" id="service5Short">Analyze your phone number's energy</p>
                     <div class="service-detail">
-                        <p id="service5Detail">Your phone number carries vibrational frequency.</p>
+                        <p id="service5Detail">Your phone number carries vibrational frequency that affects your communication and connections. This analysis examines the numerological value of your mobile number to determine how it influences your interactions, relationships, and business communications. If your current number carries challenging vibrations, Yaxita can suggest alternative numbers that would serve you better. A harmonious phone number can improve communication clarity, strengthen relationships, and attract better opportunities.</p>
                     </div>
                 </div>
 
@@ -1498,7 +1506,7 @@ body {
                     <h3 id="service6Title">Personal Guidance</h3>
                     <p class="service-short" id="service6Short">One-on-one personalized sessions</p>
                     <div class="service-detail">
-                        <p id="service6Detail">Get exclusive one-on-one consultation tailored to your needs.</p>
+                        <p id="service6Detail">Get exclusive one-on-one consultation tailored specifically to your unique life situation and questions. Whether you're facing career dilemmas, relationship challenges, health concerns, or seeking clarity on major life decisions, Yaxita provides customized guidance based on your complete numerological profile. These sessions are deeply personal, addressing your specific concerns while providing actionable insights you can implement immediately. Perfect for those seeking comprehensive life direction and support.</p>
                     </div>
                 </div>
             </div>
@@ -1537,28 +1545,28 @@ body {
                     <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🕉️</div>
                     <div class="step-number">1</div>
                     <h3 id="step1Title">Schedule Consultation</h3>
-                    <p id="step1Desc">Contact us and book your consultation.</p>
+                    <p id="step1Desc">Contact us and book your personalized numerology consultation session.</p>
                 </div>
                 <div class="step-arrow">→</div>
                 <div class="step flip-in">
                     <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📝</div>
                     <div class="step-number">2</div>
                     <h3 id="step2Title">Share Your Details</h3>
-                    <p id="step2Desc">Provide your birth date and name.</p>
+                    <p id="step2Desc">Provide your birth date, name, and any specific areas you'd like guidance on.</p>
                 </div>
                 <div class="step-arrow">→</div>
                 <div class="step flip-in">
                     <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">✨</div>
                     <div class="step-number">3</div>
                     <h3 id="step3Title">In-Depth Analysis</h3>
-                    <p id="step3Desc">Thorough numerological analysis.</p>
+                    <p id="step3Desc">Yaxita performs a thorough numerological analysis of your life numbers.</p>
                 </div>
                 <div class="step-arrow">→</div>
                 <div class="step flip-in">
                     <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🎯</div>
                     <div class="step-number">4</div>
                     <h3 id="step4Title">Receive Guidance</h3>
-                    <p id="step4Desc">Get personalized insights.</p>
+                    <p id="step4Desc">Get personalized insights, recommendations, and actionable guidance for your life.</p>
                 </div>
             </div>
         </div>
@@ -1587,7 +1595,7 @@ body {
                 <div class="testimonial-card zoom-in">
                     <div style="margin-bottom: 0.5rem; font-size: 1.2rem;">☆ आशीर्वाद ☆</div>
                     <div class="stars">★★★★★</div>
-                    <p id="testimonial1Text">Yaxita's numerology reading was incredibly accurate!</p>
+                    <p id="testimonial1Text">Yaxita's numerology reading was incredibly accurate and helped me understand my life path better. I'm now making decisions with more confidence!</p>
                     <h4 id="testimonial1Name">Priya Sharma</h4>
                     <span id="testimonial1Location">Mumbai, India</span>
                 </div>
@@ -1595,7 +1603,7 @@ body {
                 <div class="testimonial-card zoom-in">
                     <div style="margin-bottom: 0.5rem; font-size: 1.2rem;">☆ आशीर्वाद ☆</div>
                     <div class="stars">★★★★★</div>
-                    <p id="testimonial2Text">The birth chart reading was so detailed and insightful.</p>
+                    <p id="testimonial2Text">I was skeptical at first, but the birth chart reading was so detailed and insightful. It completely changed my perspective on my career and relationships.</p>
                     <h4 id="testimonial2Name">Rajesh Patel</h4>
                     <span id="testimonial2Location">Ahmedabad, India</span>
                 </div>
@@ -1603,7 +1611,7 @@ body {
                 <div class="testimonial-card zoom-in">
                     <div style="margin-bottom: 0.5rem; font-size: 1.2rem;">☆ आशीर्वाद ☆</div>
                     <div class="stars">★★★★★</div>
-                    <p id="testimonial3Text">Lucky number consultation was helpful!</p>
+                    <p id="testimonial3Text">The lucky number consultation helped me choose the perfect car number. Since then, everything has been going smoothly. Highly recommended!</p>
                     <h4 id="testimonial3Name">Anjali Verma</h4>
                     <span id="testimonial3Location">Bangalore, India</span>
                 </div>
@@ -1748,22 +1756,22 @@ const translations = {
         servicesSubtitle: "Transform Your Life with Numerological Insights",
         service1Title: "Numerology Analysis",
         service1Short: "Comprehensive analysis of your life numbers",
-        service1Detail: "Get a complete breakdown of your Life Path Number, Expression Number, Soul Urge Number, and Personality Number.",
+        service1Detail: "Get a complete breakdown of your Life Path Number, Expression Number, Soul Urge Number, and Personality Number. Each number reveals different aspects of your personality, strengths, weaknesses, and life purpose. Yaxita will provide detailed insights into what these numbers mean for your future and how you can leverage them for personal growth.",
         service2Title: "Birth Chart Reading",
         service2Short: "Detailed reading of your birth chart",
-        service2Detail: "Your birth chart is like a cosmic blueprint of your life.",
+        service2Detail: "Your birth chart is like a cosmic blueprint of your life. This in-depth reading examines the numerological vibrations present at the time of your birth. We analyze your destiny number, challenges, and life cycles to understand your overall life pattern. This service helps you recognize recurring patterns, understand your karmic lessons, and prepare for upcoming phases of your life with confidence.",
         service3Title: "Lucky Numbers",
         service3Short: "Discover your lucky numbers",
-        service3Detail: "Lucky numbers are personalized digits that carry positive energy.",
+        service3Detail: "Lucky numbers are personalized digits that carry positive vibrational energy aligned with your numerological profile. These numbers can be used for important dates, decisions, and endeavors to attract prosperity and success. Yaxita will calculate your specific lucky numbers for different areas of life - career, finance, relationships, and health. You'll learn how to use these numbers strategically in your daily life to enhance positive outcomes.",
         service4Title: "Car Number Consultation",
         service4Short: "Choose the perfect car number",
-        service4Detail: "Your car's registration number impacts your journey and safety.",
+        service4Detail: "Your car's registration number has a significant impact on your journey and safety. This service helps you select or analyze a car number that aligns harmoniously with your personal numerology. A well-aligned car number can enhance safety, smooth travel, and positive experiences during your journeys. Yaxita will analyze potential car numbers and recommend the most auspicious options for you, ensuring your vehicle carries vibrations that support your well-being.",
         service5Title: "Phone Number Analysis",
         service5Short: "Analyze your phone number's energy",
-        service5Detail: "Your phone number carries vibrational frequency.",
+        service5Detail: "Your phone number carries vibrational frequency that affects your communication and connections. This analysis examines the numerological value of your mobile number to determine how it influences your interactions, relationships, and business communications. If your current number carries challenging vibrations, Yaxita can suggest alternative numbers that would serve you better. A harmonious phone number can improve communication clarity, strengthen relationships, and attract better opportunities.",
         service6Title: "Personal Guidance",
         service6Short: "One-on-one personalized sessions",
-        service6Detail: "Get exclusive one-on-one consultation tailored to your needs.",
+        service6Detail: "Get exclusive one-on-one consultation tailored specifically to your unique life situation and questions. Whether you're facing career dilemmas, relationship challenges, health concerns, or seeking clarity on major life decisions, Yaxita provides customized guidance based on your complete numerological profile. These sessions are deeply personal, addressing your specific concerns while providing actionable insights you can implement immediately. Perfect for those seeking comprehensive life direction and support.",
         howTitle: "How It Works",
         howSubtitle: "Your Journey to Clarity in Simple Steps",
         step1Title: "Schedule Consultation",
@@ -1776,13 +1784,13 @@ const translations = {
         step4Desc: "Get personalized insights, recommendations, and actionable guidance for your life.",
         testimonialsTitle: "What Our Clients Say",
         testimonialsSubtitle: "Real Stories, Real Transformations",
-        testimonial1Text: "Yaxita's numerology reading was incredibly accurate and helped me understand my life path better!",
+        testimonial1Text: "Yaxita's numerology reading was incredibly accurate and helped me understand my life path better. I'm now making decisions with more confidence!",
         testimonial1Name: "Priya Sharma",
         testimonial1Location: "Mumbai, India",
-        testimonial2Text: "The birth chart reading was so detailed and insightful. It completely changed my perspective!",
+        testimonial2Text: "I was skeptical at first, but the birth chart reading was so detailed and insightful. It completely changed my perspective on my career and relationships.",
         testimonial2Name: "Rajesh Patel",
         testimonial2Location: "Ahmedabad, India",
-        testimonial3Text: "The lucky number consultation helped me choose the perfect car number. Highly recommended!",
+        testimonial3Text: "The lucky number consultation helped me choose the perfect car number. Since then, everything has been going smoothly. Highly recommended!",
         testimonial3Name: "Anjali Verma",
         testimonial3Location: "Bangalore, India",
         contactTitle: "Get In Touch",
@@ -1818,35 +1826,35 @@ const translations = {
         servicesSubtitle: "ન્યુમરોલોજીકલ આંતરદૃષ્ટિ સાથે તમારા જીવનને રૂપાંતરિત કરો",
         service1Title: "ન્યુમરોલોજી વિશ્લેષણ",
         service1Short: "તમારા જીવન નંબરોનું વ્યાપક વિશ્લેષણ",
-        service1Detail: "તમારા લાઇફ પાથ નંબર, એક્સપ્રેશન નંબર અને પર્સોનાલિટી નંબરનું વિશ્લેષણ મેળવો.",
+        service1Detail: "તમારા લાઇફ પાથ નંબર, એક્સપ્રેશન નંબર અને પર્સોનાલિટી નંબરનું વિશ્લેષણ મેળવો. દરેક નંબર તમારા વ્યક્તિત્વ, શક્તિ, નબળાઈ અને જીવનના હેતુના વિવિધ પાસાઓ પ્રગટ કરે છે. યક્ષિતા આ સંખ્યાઓ તમારા ભવિષ્ય માટે શું સૂચવે છે અને તમે વ્યક્તિગત વૃદ્ધિ માટે તેનો લાભ કેવી રીતે લઈ શકો તે વિશે વિગતવાર સમજણ આપશે.",
         service2Title: "જન્મ ચાર્ટ વાંચન",
         service2Short: "તમારા જન્મ ચાર્ટનું વિગતવાર વાંચન",
-        service2Detail: "તમારો જન્મ ચાર્ટ તમારા જીવનના બ્રહ્માંડીય બ્લુપ્રિન્ટ જેવો છે.",
+        service2Detail: "તમારો જન્મ ચાર્ટ તમારા જીવનના બ્રહ્માંડીય બ્લુપ્રિન્ટ જેવો છે. આ ઊંડાણવાળું વાંચન તમારા જન્મ સમયે મૌજૂદ ન્યુમરોલોજીકલ કંપનોનું પરીક્ષણ કરે છે. અમે તમારા ભાગ્ય નંબર, પડકારો અને જીવન ચક્રોનું વિશ્લેષણ કરી તમારા એકંદર જીવન પેટર્નને સમજીએ છીએ. આ સેવા તમને પુનરાવર્તિત પેટર્ન ઓળખવામાં, તમારા કર્માત્મક પાઠ સમજવામાં અને તમારા જીવનના આગામી તબક્કાઓ માટે આત્મવિશ્વાસ સાથે તૈયાર થવામા��� મદદ કરે છે.",
         service3Title: "ભાગ્યશાળી નંબરો",
         service3Short: "તમારા ભાગ્યશાળી નંબરો શોધો",
-        service3Detail: "ભાગ્યશાળી નંબરો વ્યક્તિગતકૃત અંક છે જે હકારાત્મક ઊર્જા ધરાવે છે.",
+        service3Detail: "ભાગ્યશાળી નંબરો વ્યક્તિગતકૃત અંક છે જે તમારા ન્યુમરોલોજીકલ પ્રોફાઇલ સાથે સંરેખિત હકારાત્મક ઊર્જા ધરાવે છે. આ સંખ્યાઓ મહત્વપૂર્ણ તારીખો, નિર્ણયો ��ને પ્રયાસ માટે સમૃદ્ધિ અને સફળતા આકર્ષણ કરવા માટે ઉપયોગ કરી શકાય છે. યક્ષિતા જીવનના વિવિધ ક્ષેત્રો - કર્મ, નાણા, સંબંધો અને સ્વાસ્થ્ય માટે તમારા ચોક્કસ ભાગ્યશાળી નંબર ગણતરી કરશે. તમે તમારા રોજિંદા જીવનમાં આ સંખ્યાઓનો વ્યૂહાત્મક રીતે ઉપયોગ કરવા અને હકારાત્મક ફલાફળ વધારવા માટે શીખશો.",
         service4Title: "કાર નંબર પરામર્શ",
         service4Short: "સંપૂર્ણ કાર નંબર પસંદ કરો",
-        service4Detail: "તમારી કારનો નોંધણી નંબર તમારી યાત્રા પર નોંધપાત્ર અસર ડાલે છે.",
+        service4Detail: "તમારી કારનો નોંધણી નંબર તમારી યાત્રા અને સલામતી પર નોંધપાત્ર અસર ડાલે છે. આ સેવા તમને એવો કાર નંબર પસંદ કરવા અથવા વિશ્લેષણ કરવામાં મદદ કરે છે જે તમારી વ્યક્તિગત ન્યુમરોલોજીના સાથે સુમેળપૂર્ણ રીતે સંરેખિત હોય. સારી રીતે સંરેખિત કાર નંબર સલામતી, સરળ પ્રવાસ અને તમારી યાત્રા દરમિયાન હકારાત્મક અનુભવો વધારી શકે છે. યક્ષિતા સંભવિત કાર નંબરોનું વિશ્લેષણ કરશે અને તમને સૌથી શુભ વિકલ્પ ભલામણ કરશે.",
         service5Title: "ફોન નંબર વિશ્લેષણ",
         service5Short: "તમારા ફોન નંબરની ઊર્જા વિશ્લેષણ કરો",
-        service5Detail: "તમારો ફોન નંબર કંપનાત્મક આવર્તન ધરાવે છે.",
+        service5Detail: "તમારો ફોન નંબર કંપનાત્મક આવર્તન ધરાવે છે જે તમારા સંચાર અને જોડાણોને પ્રભાવિત કરે છે. આ વિશ્લેષણ તમારા મોબાઈલ નંબરના ન્યુમરોલોજીકલ મૂલ્યનું પરીક્ષણ કરે છે કે તે તમારી ક્રિયાપ્રતિક્રિયાઓ, સંબંધો અને વ્યવસાયિક સંચારોને કેવી રીતે પ્રભાવિત કરે છે તે નક્કી કરવા માટે. જો તમારો વર્તમાન નંબર પડકારજનક કંપનાઓ ધરાવે છે, તો યક્ષિતા વૈકલ્પિક સંખ્યા સૂચવી શકે છે જે તમે માટે વધુ સારી રીતે કામ કરશે.",
         service6Title: "વ્યક્તિગત માર્ગદર્શન",
         service6Short: "વ્યક્તિ-દર-વ્યક્તિ વ્યક્તિગત સત્રો",
-        service6Detail: "તમારી અનન્ય જીવન પરિસ્થિતિ માટે ખાસ રીતે તૈયાર કરેલ પરામર્શ મેળવો.",
+        service6Detail: "તમારી અનન્ય જીવન પરિસ્થિતિ અને પ્રશ્નો માટે ખાસ રીતે તૈયાર કરેલ એક્સક્લુસિવ વ્યક્તિ-દર-વ્યક્તિ પરામર્શ મેળવો. ભલે તમે કર્મ મુશ્કેલીઓ, સંબંધ પડકારો, સ્વાસ્થ્ય ચિંતાઓ અથવા જીવનના મોટા નિર્ણયો પર સ્પષ્ટતા શોધી રહ્યા હો, યક્ષિતા તમારી સંપૂર્ણ ન્યુમરોલોજીકલ પ્રોફાઇલના આધારે કસ્ટમાઇઝ્ડ માર્ગદર્શન પ્રદાન કરે છે.",
         howTitle: "આ કેવી રીતે કામ કરે છે",
         howSubtitle: "સાદા પગલામાં તમારી સ્પષ્ટતાની યાત્રા",
         step1Title: "પરામર્શ શેડ્યુલ કરો",
         step1Desc: "અમેનો સંપર્ક કરો અને તમારો વ્યક્તિગતકૃત પરામર્શ સત્ર બુક કરો.",
         step2Title: "તમારી વિગતો શેર કરો",
-        step2Desc: "તમારો જન્મતારીખ અને નામ આપો.",
+        step2Desc: "તમારો જન્મતારી��, નામ અને તમે જે કોઈ ચોક્કસ ક્ષેત્ર પર માર્ગદર્શન ચાહતા છો તે વિગતો આપો.",
         step3Title: "ઊંડાણવાળું વિશ્લેષણ",
-        step3Desc: "યક્ષિતા તમારા જીવન નંબરોનું સાવચેતીપૂર્વક વિશ્લેષણ કરે છે.",
+        step3Desc: "યક્ષિતા તમારા જીવન નંબરોનું સાવચેતીપૂર્વક ન્યુમરોલોજીકલ વિશ્લેષણ કરે છે.",
         step4Title: "માર્ગદર્શન મેળવો",
-        step4Desc: "તમારા જીવન માટે વ્યક્તિગતકૃત માર્ગદર્શન મેળવો.",
+        step4Desc: "તમારા જીવન માટે વ્યક્તિગતકૃત સમજણ, ભલામણો અને ક્રિયાશીલ માર્ગદર્શન મેળવો.",
         testimonialsTitle: "આપણા ક્લાયંટો શું કહે છે",
         testimonialsSubtitle: "વાસ્તવિક વાર્તાઓ, વાસ્તવિક રૂપાંતરણો",
-        testimonial1Text: "યક્ષિતાનું ન્યુમરોલોજી વાંચન અવિશ્વસનીય રીતે સચોટ હતું!",
+        testimonial1Text: "યક્ષિતાનું ન્યુમરો���ોજી વાંચન અવિશ્વસનીય રીતે સચોટ હતું અને મને મારા જીવન માર્ગને વધુ સારી રીતે સમજવામાં મદદ કરી.",
         testimonial1Name: "પ્રિયા શર્મા",
         testimonial1Location: "મુંબઈ, ભારત",
         testimonial2Text: "જન્મ ચાર્ટ વાંચન એટલું વિગતવાર અને અંતર્દૃષ્ટિપૂર્ણ હતું!",
@@ -1856,7 +1864,7 @@ const translations = {
         testimonial3Name: "અંજલી વર્મા",
         testimonial3Location: "બેંગ્લુરુ, ભારત",
         contactTitle: "સંપર્કમાં આવો",
-        contactSubtitle: "તમારી સાચી ક્ષમતા શોધવા મ���ટે તૈયાર છો?",
+        contactSubtitle: "તમારી સાચી ક્ષમતા શોધવા માટે તૈયાર છો?",
         contactInfoTitle: "સંપર્ક માહિતી",
         contactPhoneLabel: "ફોન",
         contactEmailLabel: "ઈમેલ",
@@ -1971,13 +1979,36 @@ document.addEventListener('DOMContentLoaded', () => {
     updateAllText();
     document.querySelectorAll('.lang-btn')[currentLanguage === 'en' ? 0 : 1].classList.add('active');
     
+    // SERVICE CARD CLICK HANDLER - EXPANDABLE DETAILS
     document.querySelectorAll('.service-card').forEach(card => {
         card.addEventListener('click', () => {
-            document.querySelectorAll('.service-detail').forEach(detail => {
-                detail.classList.remove('show');
+            const detail = card.querySelector('.service-detail');
+            const isExpanded = card.classList.contains('expanded');
+            
+            // Close all other expanded cards
+            document.querySelectorAll('.service-card').forEach(otherCard => {
+                otherCard.classList.remove('expanded');
+                const otherDetail = otherCard.querySelector('.service-detail');
+                if (otherDetail) otherDetail.classList.remove('show');
             });
-            card.querySelector('.service-detail').classList.add('show');
+            
+            // Toggle current card
+            if (!isExpanded) {
+                card.classList.add('expanded');
+                if (detail) detail.classList.add('show');
+            }
         });
+    });
+    
+    // Close expanded cards when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.service-card')) {
+            document.querySelectorAll('.service-card').forEach(card => {
+                card.classList.remove('expanded');
+                const detail = card.querySelector('.service-detail');
+                if (detail) detail.classList.remove('show');
+            });
+        }
     });
     
     document.getElementById('contactForm').addEventListener('submit', (e) => {
