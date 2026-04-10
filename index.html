@@ -2,12 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Yaxita Barot - Numerology & Life Guidance</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Vastu Corner Decorations -->
+    <div class="vastu-corner vastu-top-left">
+        <div class="mandala-small"></div>
+    </div>
+    <div class="vastu-corner vastu-top-right">
+        <div class="om-symbol">ॐ</div>
+    </div>
+    <div class="vastu-corner vastu-bottom-left">
+        <div class="om-symbol">ॐ</div>
+    </div>
+    <div class="vastu-corner vastu-bottom-right">
+        <div class="mandala-small"></div>
+    </div>
+
     <!-- Language Toggle -->
     <div class="language-toggle-bar">
         <div class="container">
@@ -25,8 +39,13 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <h1>✨ Yaxita Barot</h1>
-                    <p class="translate" key="subtitle">Numerology & Life Guidance</p>
+                    <div class="logo-icon">
+                        <div class="mandala-tiny"></div>
+                    </div>
+                    <div class="logo-text">
+                        <h1>✨ Yaxita Barot</h1>
+                        <p class="translate" key="subtitle">Numerology & Life Guidance</p>
+                    </div>
                 </div>
                 <button class="mobile-menu-btn">
                     <span></span>
@@ -46,12 +65,20 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero parallax" data-speed="0.5">
+    <section id="home" class="hero parallax mobile-optimized" data-speed="0.5">
+        <div class="hero-decoration left">
+            <i class="fas fa-leaf"></i>
+        </div>
+        <div class="hero-decoration right">
+            <i class="fas fa-leaf"></i>
+        </div>
         <div class="hero-bg"></div>
         <div class="hero-content">
             <div class="glow-effect"></div>
+            <div class="auspicious-symbol top">॥</div>
             <h1 class="translate glitch-text" key="hero_title">Unlock Your Destiny Through Numbers</h1>
             <p class="translate fade-in-text" key="hero_subtitle">Discover the hidden meanings of numbers in your life and embrace your true potential</p>
+            <div class="auspicious-symbol bottom">॥</div>
             <button class="cta-btn pulse-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
                 <span class="translate" key="cta_button">Get Your Reading Today</span>
             </button>
@@ -60,10 +87,14 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about parallax" data-speed="0.3">
+    <section id="about" class="about parallax mobile-optimized" data-speed="0.3">
+        <div class="vastu-line top"></div>
         <div class="container">
             <div class="about-wrapper">
                 <div class="about-content slide-in-left">
+                    <div class="section-ornament left">
+                        <i class="fas fa-om"></i>
+                    </div>
                     <h2 class="translate glow-text" key="about_title">About Yaxita Barot</h2>
                     <p class="translate" key="about_p1">Yaxita Barot is a dedicated numerologist with years of experience in helping individuals understand their life path, personal strengths, and hidden potentials through the ancient science of numerology.</p>
                     <p class="translate" key="about_p2">With a deep understanding of numerological principles and spiritual wisdom, Yaxita provides personalized guidance to help you make informed decisions about your career, relationships, health, and personal growth.</p>
@@ -74,143 +105,178 @@
                         <li class="translate" key="about_cert">✓ Certified Numerologist</li>
                         <li class="translate" key="about_cons">✓ Personalized Consultations</li>
                     </ul>
+                    <div class="section-ornament right">
+                        <i class="fas fa-om"></i>
+                    </div>
                 </div>
                 <div class="about-image slide-in-right">
                     <div class="placeholder-image floating">
-                        <i class="fas fa-star"></i>
+                        <div class="mandala-medium"></div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="vastu-line bottom"></div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services parallax" data-speed="0.4">
+    <section id="services" class="services parallax mobile-optimized" data-speed="0.4">
+        <div class="vastu-decoration">
+            <div class="flower-ornament top-left">🌸</div>
+            <div class="flower-ornament top-right">🌸</div>
+            <div class="flower-ornament bottom-left">🌸</div>
+            <div class="flower-ornament bottom-right">🌸</div>
+        </div>
         <div class="container">
-            <h2 class="translate glow-text" key="services_title">Our Services</h2>
-            <p class="section-subtitle translate" key="services_subtitle">Transform Your Life with Numerological Insights</p>
+            <div class="section-header">
+                <div class="auspicious-lines left"></div>
+                <div>
+                    <h2 class="translate glow-text" key="services_title">Our Services</h2>
+                    <p class="section-subtitle translate" key="services_subtitle">Transform Your Life with Numerological Insights</p>
+                </div>
+                <div class="auspicious-lines right"></div>
+            </div>
             <div class="services-grid">
                 <!-- Service 1 -->
                 <div class="service-card stagger-animation" style="animation-delay: 0.1s">
                     <div class="card-glow"></div>
+                    <div class="service-top-ornament">✦</div>
                     <div class="service-icon">
                         <i class="fas fa-book-open"></i>
                     </div>
                     <h3 class="translate" key="service1_title">Numerology Analysis</h3>
                     <p class="service-short translate" key="service1_short">Comprehensive analysis of your life numbers</p>
                     <div class="service-detail">
-                        <p class="translate" key="service1_detail">Get a complete breakdown of your Life Path Number, Expression Number, Soul Urge Number, and Personality Number. Each number reveals different aspects of your personality, strengths, weaknesses, and life purpose. Yaxita will provide detailed insights into what these numbers mean for your future and how you can leverage them for personal growth.</p>
+                        <p class="translate" key="service1_detail">Get a complete breakdown of your Life Path Number, Expression Number, Soul Urge Number, and Personality Number. Each number reveals different aspects of your personality, strengths, weaknesses, and life purpose.</p>
                     </div>
+                    <div class="service-bottom-ornament">✦</div>
                 </div>
 
                 <!-- Service 2 -->
                 <div class="service-card stagger-animation" style="animation-delay: 0.2s">
                     <div class="card-glow"></div>
+                    <div class="service-top-ornament">✦</div>
                     <div class="service-icon">
                         <i class="fas fa-chart-pie"></i>
                     </div>
                     <h3 class="translate" key="service2_title">Birth Chart Reading</h3>
                     <p class="service-short translate" key="service2_short">Detailed reading of your birth chart</p>
                     <div class="service-detail">
-                        <p class="translate" key="service2_detail">Your birth chart is like a cosmic blueprint of your life. This in-depth reading examines the numerological vibrations present at the time of your birth. We analyze your destiny number, challenges, and life cycles to understand your overall life pattern. This service helps you recognize recurring patterns, understand your karmic lessons, and prepare for upcoming phases of your life with confidence.</p>
+                        <p class="translate" key="service2_detail">Your birth chart is like a cosmic blueprint of your life. This in-depth reading examines the numerological vibrations present at the time of your birth.</p>
                     </div>
+                    <div class="service-bottom-ornament">✦</div>
                 </div>
 
                 <!-- Service 3 -->
                 <div class="service-card stagger-animation" style="animation-delay: 0.3s">
                     <div class="card-glow"></div>
+                    <div class="service-top-ornament">✦</div>
                     <div class="service-icon">
                         <i class="fas fa-dice-one"></i>
                     </div>
                     <h3 class="translate" key="service3_title">Lucky Numbers</h3>
                     <p class="service-short translate" key="service3_short">Discover your lucky numbers</p>
                     <div class="service-detail">
-                        <p class="translate" key="service3_detail">Lucky numbers are personalized digits that carry positive vibrational energy aligned with your numerological profile. These numbers can be used for important dates, decisions, and endeavors to attract prosperity and success. Yaxita will calculate your specific lucky numbers for different areas of life - career, finance, relationships, and health. You'll learn how to use these numbers strategically in your daily life to enhance positive outcomes.</p>
+                        <p class="translate" key="service3_detail">Lucky numbers are personalized digits that carry positive vibrational energy aligned with your numerological profile.</p>
                     </div>
+                    <div class="service-bottom-ornament">✦</div>
                 </div>
 
                 <!-- Service 4 -->
                 <div class="service-card stagger-animation" style="animation-delay: 0.4s">
                     <div class="card-glow"></div>
+                    <div class="service-top-ornament">✦</div>
                     <div class="service-icon">
                         <i class="fas fa-car"></i>
                     </div>
                     <h3 class="translate" key="service4_title">Car Number Consultation</h3>
                     <p class="service-short translate" key="service4_short">Choose the perfect car number</p>
                     <div class="service-detail">
-                        <p class="translate" key="service4_detail">Your car's registration number has a significant impact on your journey and safety. This service helps you select or analyze a car number that aligns harmoniously with your personal numerology. A well-aligned car number can enhance safety, smooth travel, and positive experiences during your journeys. Yaxita will analyze potential car numbers and recommend the most auspicious options for you, ensuring your vehicle carries vibrations that support your well-being.</p>
+                        <p class="translate" key="service4_detail">Your car's registration number has a significant impact on your journey and safety. This service helps you select or analyze a car number.</p>
                     </div>
+                    <div class="service-bottom-ornament">✦</div>
                 </div>
 
                 <!-- Service 5 -->
                 <div class="service-card stagger-animation" style="animation-delay: 0.5s">
                     <div class="card-glow"></div>
+                    <div class="service-top-ornament">✦</div>
                     <div class="service-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
                     <h3 class="translate" key="service5_title">Phone Number Analysis</h3>
                     <p class="service-short translate" key="service5_short">Analyze your phone number's energy</p>
                     <div class="service-detail">
-                        <p class="translate" key="service5_detail">Your phone number carries vibrational frequency that affects your communication and connections. This analysis examines the numerological value of your mobile number to determine how it influences your interactions, relationships, and business communications. If your current number carries challenging vibrations, Yaxita can suggest alternative numbers that would serve you better. A harmonious phone number can improve communication clarity, strengthen relationships, and attract better opportunities.</p>
+                        <p class="translate" key="service5_detail">Your phone number carries vibrational frequency that affects your communication and connections.</p>
                     </div>
+                    <div class="service-bottom-ornament">✦</div>
                 </div>
 
                 <!-- Service 6 -->
                 <div class="service-card stagger-animation" style="animation-delay: 0.6s">
                     <div class="card-glow"></div>
+                    <div class="service-top-ornament">✦</div>
                     <div class="service-icon">
                         <i class="fas fa-compass"></i>
                     </div>
                     <h3 class="translate" key="service6_title">Personal Guidance</h3>
                     <p class="service-short translate" key="service6_short">One-on-one personalized sessions</p>
                     <div class="service-detail">
-                        <p class="translate" key="service6_detail">Get exclusive one-on-one consultation tailored specifically to your unique life situation and questions. Whether you're facing career dilemmas, relationship challenges, health concerns, or seeking clarity on major life decisions, Yaxita provides customized guidance based on your complete numerological profile. These sessions are deeply personal, addressing your specific concerns while providing actionable insights you can implement immediately. Perfect for those seeking comprehensive life direction and support.</p>
+                        <p class="translate" key="service6_detail">Get exclusive one-on-one consultation tailored specifically to your unique life situation and questions.</p>
                     </div>
+                    <div class="service-bottom-ornament">✦</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works parallax" data-speed="0.3">
+    <section id="how-it-works" class="how-it-works parallax mobile-optimized" data-speed="0.3">
+        <div class="vastu-line top"></div>
         <div class="container">
             <h2 class="translate glow-text" key="how_title">How It Works</h2>
             <p class="section-subtitle translate" key="how_subtitle">Your Journey to Clarity in Simple Steps</p>
             <div class="steps">
                 <div class="step flip-in" style="animation-delay: 0s">
+                    <div class="step-ornament">◈</div>
                     <div class="step-number">1</div>
                     <h3 class="translate" key="step1_title">Schedule Consultation</h3>
                     <p class="translate" key="step1_desc">Contact us and book your personalized numerology consultation session.</p>
                 </div>
                 <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
                 <div class="step flip-in" style="animation-delay: 0.2s">
+                    <div class="step-ornament">◈</div>
                     <div class="step-number">2</div>
                     <h3 class="translate" key="step2_title">Share Your Details</h3>
                     <p class="translate" key="step2_desc">Provide your birth date, name, and any specific areas you'd like guidance on.</p>
                 </div>
                 <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
                 <div class="step flip-in" style="animation-delay: 0.4s">
+                    <div class="step-ornament">◈</div>
                     <div class="step-number">3</div>
                     <h3 class="translate" key="step3_title">In-Depth Analysis</h3>
                     <p class="translate" key="step3_desc">Yaxita performs a thorough numerological analysis of your life numbers.</p>
                 </div>
                 <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
                 <div class="step flip-in" style="animation-delay: 0.6s">
+                    <div class="step-ornament">◈</div>
                     <div class="step-number">4</div>
                     <h3 class="translate" key="step4_title">Receive Guidance</h3>
                     <p class="translate" key="step4_desc">Get personalized insights, recommendations, and actionable guidance for your life.</p>
                 </div>
             </div>
         </div>
+        <div class="vastu-line bottom"></div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials parallax" data-speed="0.4">
+    <section id="testimonials" class="testimonials parallax mobile-optimized" data-speed="0.4">
         <div class="container">
             <h2 class="translate glow-text" key="testimonials_title">What Our Clients Say</h2>
             <p class="section-subtitle translate" key="testimonials_subtitle">Real Stories, Real Transformations</p>
             <div class="testimonials-grid">
                 <div class="testimonial-card zoom-in" style="animation-delay: 0.1s">
+                    <div class="testimonial-ornament">🌟</div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -224,6 +290,7 @@
                 </div>
 
                 <div class="testimonial-card zoom-in" style="animation-delay: 0.2s">
+                    <div class="testimonial-ornament">🌟</div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -237,6 +304,7 @@
                 </div>
 
                 <div class="testimonial-card zoom-in" style="animation-delay: 0.3s">
+                    <div class="testimonial-ornament">🌟</div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -253,12 +321,14 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact parallax" data-speed="0.3">
+    <section id="contact" class="contact parallax mobile-optimized" data-speed="0.3">
+        <div class="vastu-line top"></div>
         <div class="container">
             <h2 class="translate glow-text" key="contact_title">Get In Touch</h2>
             <p class="section-subtitle translate" key="contact_subtitle">Ready to Discover Your True Potential?</p>
             <div class="contact-wrapper slide-up">
                 <div class="contact-info">
+                    <div class="contact-ornament">✨</div>
                     <h3 class="translate" key="contact_info_title">Contact Information</h3>
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
@@ -291,6 +361,7 @@
                 </div>
 
                 <form class="contact-form" id="contactForm">
+                    <div class="form-ornament">📿</div>
                     <div class="form-group">
                         <input type="text" placeholder="Your Name" required id="name">
                     </div>
@@ -321,15 +392,23 @@
                 </form>
             </div>
         </div>
+        <div class="vastu-line bottom"></div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
+            <div class="footer-ornament">🙏</div>
             <p class="translate" key="footer_copyright">© 2026 Yaxita Barot - Numerology & Life Guidance. All rights reserved.</p>
             <p class="translate" key="footer_tagline">Unlock Your Destiny Through Numbers | Est. 2016</p>
+            <div class="footer-ornament">🙏</div>
         </div>
     </footer>
+
+    <!-- Floating Elements -->
+    <div class="floating-leaf leaf-1">🍂</div>
+    <div class="floating-leaf leaf-2">🍂</div>
+    <div class="floating-leaf leaf-3">🍂</div>
 
     <script src="languages.js"></script>
     <script src="script.js"></script>
